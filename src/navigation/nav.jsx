@@ -51,7 +51,7 @@ const NavBar = ({ className, handleTabClick }) => {
             onClick={handleTabClick}
             className={currentScreen === "our-services" ? "currentScreenBlack" : ""}
         >
-          Services
+          Our Services
         </Link>
         <Link 
             to="/portfolio" 

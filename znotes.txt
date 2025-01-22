@@ -1,1 +1,6 @@
-barra de pesquisa esta preta
+barra de pesquisa esta preta na pagina de blogs
+
+navegando diretamente para uma subpagina do site, ou refreshing subpagina da um erro
+
+
+home page na versao mobile precisa de responsividade com texto grande
