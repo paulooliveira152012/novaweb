@@ -4,3 +4,38 @@ navegando diretamente para uma subpagina do site, ou refreshing subpagina da um 
 
 
 home page na versao mobile precisa de responsividade com texto grande
+
+
+
+
+
+
+{
+  "version": 2,
+  "headers": [
+    {
+      "source": "/(.*)", 
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        },
+        {
+          "key": "Pragma",
+          "value": "no-cache"
+        },
+        {
+          "key": "Expires",
+          "value": "0"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "cleanUrls": true
+}
