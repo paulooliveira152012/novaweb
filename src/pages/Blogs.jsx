@@ -13,7 +13,6 @@ import webDesign from "../assets/images/services/webDesign.svg"
 
 
 
-
 const blogs = [
   {
     title: "Web Design",

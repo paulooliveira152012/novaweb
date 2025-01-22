@@ -1,9 +1,12 @@
-barra de pesquisa esta preta na pagina de blogs
+✅ barra de pesquisa esta preta na pagina de blogs
 
-navegando diretamente para uma subpagina do site, ou refreshing subpagina da um erro
-
+✅ navegando diretamente para uma subpagina do site, ou refreshing subpagina da um erro
 
 home page na versao mobile precisa de responsividade com texto grande
+
+✅ favicon precisa atualizar
+
+atualizar os textos no home para serviços
 
 
 

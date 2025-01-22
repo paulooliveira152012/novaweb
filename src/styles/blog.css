@@ -23,6 +23,7 @@
     width: 300px; /* Ensure it has a fixed width */
     z-index: 10; /* Brings the input above other elements */
     position: relative; /* Ensures proper positioning */
+    background-color: white;
   }
   
   
