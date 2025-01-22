@@ -34,7 +34,7 @@ home page na versao mobile precisa de responsividade com texto grande
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": "/"
     }
   ],
   "cleanUrls": true
