@@ -12,6 +12,7 @@
     box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.218);
     margin-bottom: 20px;
     border-radius: 0 0 30px 30px;
+    /* min-height: fit-content; */
 }
 
 

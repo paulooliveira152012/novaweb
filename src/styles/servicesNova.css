@@ -54,7 +54,7 @@
 }
 
 .selected {
-    color:  #1322c9;
+    color: #1322c9 !important;
 }
 
 .ServicesWrapper > div:last-child {
@@ -80,4 +80,11 @@
     /* text-align: justify; */
     /* background-color: red; */
     /* line-height: 2em; */
+}
+
+@media screen and (max-width: 768) {
+    .selected {
+        color: red !important;
+        background-color: #1322c9 !important;
+    }
 }

@@ -2,10 +2,10 @@ import '../styles/servicesNova.css';
 import { useState, useEffect } from 'react';
 
 const services = [
-    "We specialize in creating modern, user-friendly, and responsive websites that captivate your audience. Our design process focuses on blending aesthetic beauty with functionality, ensuring your website not only looks amazing but also provides an exceptional user experience across all devices.",
-    "texto 2",
-    "texto 3",
-    "texto 4"
+  "Modern, responsive, and user-focused websites designed to captivate your audience and deliver exceptional user experiences across all devices.",
+  "Robust and scalable web development tailored to your business needs, providing seamless and dynamic applications with future growth in mind.",
+  "Crafting unique visual identities with compelling logos, color palettes, and branding materials that ensure your brand leaves a lasting impression.",
+  "Strategic social media solutions designed to amplify your brand, engage your audience, and deliver visually stunning content that drives results."
 ];
 
 const Services = () => {

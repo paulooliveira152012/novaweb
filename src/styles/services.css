@@ -4,7 +4,6 @@
 }
 
 
-
 .ourServicesPage .serviceCard {
   text-align: left;
 }
@@ -136,6 +135,35 @@
   
     .serviceImage {
       height: 150px;
+    }
+
+    .ServicesWrapper {
+      /* background-color: red; */
+      flex-direction: column;
+      height: fit-content;
+    }
+
+    .ServicesWrapper div {
+      /* background-color: pink; */
+      width: 90%;
+      /* box-sizing: border-box; */
+      margin: auto;
+      padding: 0;
+      text-align: center;
+    }
+
+    .ServicesWrapper div li {
+      background-color: #10aeb3;
+      border-radius: 20px;
+      margin-bottom: 10px !important;
+      width: 50%;
+      margin: auto;
+      color: white;
+    }
+
+    .selected {
+      background-color: #1322c9 !important;
+      color: white !important;
     }
   }
   

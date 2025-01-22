@@ -2,11 +2,11 @@
 
 ✅ navegando diretamente para uma subpagina do site, ou refreshing subpagina da um erro
 
-home page na versao mobile precisa de responsividade com texto grande
+✅ home page na versao mobile precisa de responsividade com texto grande
 
 ✅ favicon precisa atualizar
 
-atualizar os textos no home para serviços
+✅ atualizar os textos no home para serviços
 
 
 
