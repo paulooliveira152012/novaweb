@@ -1,0 +1,191 @@
+.footer {
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    bottom: 0;
+    /* background-color: #313131; */
+    background-color: #F0EEEE;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.footerContent {
+    /* background-color: green; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.footer * {
+    color: black;
+}
+
+.footer .socialMediaIconContainer {
+    /* background-color: red; */
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Attention */
+.footer .socialIconFooter {
+    fill: white;
+    cursor: pointer;
+}
+
+.footerContent div {
+    width: auto;
+    min-height: 150px;
+    /* background-color: blue; */
+    /* margin: 20px; */
+}
+
+.footerContent div ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+}
+
+.footerContent div ul li {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.footerContent a {
+    margin: 0;
+    padding: 0;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+
+.footer .divLine {
+    width: 100%;
+    height: 0.5px;
+    background-color: #383535;
+    margin: 20px;
+}
+
+.footer h3 {
+    font-size: 13px;
+    color: #0014EB;
+}
+
+
+.footer .section div {
+    width: 100%;
+    margin: 10px;
+}
+
+
+
+.footer span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.footer .title {
+    flex: 1;
+}
+
+.footer .content {
+    /* background-color: purple; */
+    display: flex;
+    flex-direction: column;
+    flex: 2
+}
+
+.footer .flex {
+    display: flex;
+    /* background-color: red; */
+    margin-bottom: 60px;
+}
+
+.footer .logoContainer {
+    /* flex: 1; */
+    /* width: 100%; */
+    height: auto;
+    /* background-color: red; */
+    /* display: flex; */
+    justify-content: left;
+    /* align-items: center; */
+    margin: 20px;
+    /* padding-left: 50px; */
+}
+
+.footer  img {
+    position: absolute;
+    top: 20px;
+}
+
+.logoSmallScren {
+    width: 100%;
+    /* background-color: red; */
+    height: 20px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .footer {
+        height: 100%;
+    }
+
+    .footerContent {
+        /* background-color: red; */
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .footerContent ul {
+        align-items: center;
+    }
+
+    .footer .socialMediaIconContainer {
+        /* background-color: purple; */
+        width: 30% !important; 
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;        
+    }
+
+    .footer .socialMediaIconContainer  {
+        /* background-color: green; */
+        scale: 1.5;
+        /* fill: black */
+    }
+
+    .footer .hideLogo {
+        margin-bottom: 50px;
+        /* margin: auto; */
+    }
+
+    .logoSmallScren {
+        display: block;
+    }
+
+    .footer  img {
+        position:static;
+        /* top: 0px; */
+        align-self: center;
+        margin: auto;
+    }
+
+    .socialMediaContainer {
+        margin-top: 50px;
+    }
+}

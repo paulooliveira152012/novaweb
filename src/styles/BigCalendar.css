@@ -1,0 +1,124 @@
+.calendarContainer {
+  overflow: hidden;
+}
+
+.calendarWrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.calendarHeader {
+  background-color: #F0EEEE;
+}
+
+
+.rbc-day-bg {
+    cursor: pointer;
+}
+
+/* .rbc-day-bg:hover {
+    background-color: aqua;
+} */
+
+.rbc-today {
+    background-color: rgba(255, 255, 0, 0.343);
+}
+
+.rbc-current-time {
+    border: 1px solid yellow;
+    z-index: 200;
+    /* border-radius: 4px; */
+  }
+  
+
+.rbc-event {
+    background-color: lightblue;
+    color: black;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+
+  .rbc-day-slot .rbc-event {
+    background-color: orange;
+  }
+
+  .ReactModal__Content {
+    background-color: white !important;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+    margin-top: 10%;
+  }
+
+
+  .calendarModal {
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    outline: none;
+  }
+
+  .calendar-container {
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modal-active {
+    filter: blur(2px);
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  .rbc-selected-slot {
+    background-color: rgba(0, 128, 255, 0.2);
+  }
+  
+  .ReactModal__Content button {
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .ReactModal__Content  {
+    /* background-color: green !important; */
+    height: 60vh;
+  }
+
+  .beforeLoginContainer {
+    /* background-color: red; */
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .beforeLoginContainer button {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid grey;
+    box-shadow: 0px 3px 3px  rgba(42, 32, 32, 0.525);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .beforeLoginContainer button img {
+    height: 30px;
+    padding-right: 20px;
+  }
+
+  .ReactModal__Content--after-open {
+    max-width: 500px;
+    margin: auto;
+  }
