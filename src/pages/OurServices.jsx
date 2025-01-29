@@ -6,11 +6,10 @@ import "../styles/services.css"; // New CSS file for improved styles
 import { Link } from "react-router-dom";
 
 // Import images
-import placeHolder from "../assets/images/logo_white.svg"
-import development from "../assets/images/services/development.svg"
-import socialMedia from "../assets/images/services/socialMedia.svg"
-import visualIdentity from "../assets/images/services/visualIdentity.svg"
-import webDesign from "../assets/images/services/webDesign.svg"
+import development from "../assets/images/services/development.jpg"
+import socialMedia from "../assets/images/services/socialMedia.jpg"
+import visualIdentity from "../assets/images/services/visualIdentity.jpg"
+import webDesign from "../assets/images/services/webDesign.jpg"
 
  
 const OurServices = () => {

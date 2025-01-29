@@ -79,19 +79,12 @@
 
 .hikari {
     /* background-image: url('../assets/images/projects/hikari.png'); */
-    background-image: url('../assets/images/projectsScreenshot/hikari.png');
+    background-image: url('../assets/images/projectsScreenshot/hikari.jpg');
     background-size: contain;
     background-repeat: no-repeat;
   }
   
-  .gradsApp {
-    background-image: url('../assets/images/projectsScreenshot/gradsapp.png');
-  }
-  
-  .gradsWebsite {
-    background-image: url('../assets/images/projectsScreenshot/gradsweb.png');
-  }
-  
+
   
   .laUnionImg {
     background-image: url('../assets/images/projectsScreenshot/launion.png');
@@ -99,26 +92,22 @@
     background-repeat: no-repeat;
   }
   
-  .weatherApp {
-    background-image: url('../assets/images/projectsScreenshot/weather.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  
+
   .cristaos {
-    background-image: url('../assets/images/projectsScreenshot/cristaos.png');
+    background-image: url('../assets/images/projectsScreenshot/cristaos.jpg');
     background-size: contain;
     background-repeat: no-repeat;
   }
   
-  .grads {
-    background-image: url('../assets/images/projectsScreenshot/grads.png');
+
+  .acj {
+    background-image: url('../assets/images/projectsScreenshot/acj.jpg');
     background-size: contain;
     background-repeat: no-repeat;
   }
 
-  .acj {
-    background-image: url('../assets/images/projectsScreenshot/acj.png');
+  .whiteway {
+    background-image: url('../assets/images/projectsScreenshot/whiteway.jpg');
     background-size: contain;
     background-repeat: no-repeat;
   }

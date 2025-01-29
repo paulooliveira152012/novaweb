@@ -99,6 +99,10 @@
     /* background-color: red; */
   }
 
+  .portfolioPageImg {
+    border-radius: 10px;
+  }
+
   /* Responsive Design */
   @media (max-width: 730px) {
     .servicesGrid {

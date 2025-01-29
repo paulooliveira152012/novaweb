@@ -54,21 +54,32 @@ const ProjectsCarousel = () => {
       onMouseLeave={() => setIsHovered(false)}
     >
       {projectsList.map((project, index) => (
-        <div
+        // <div
+        //   key={index}
+        //   className={`projectContainerWide ${
+        //     index === activeIndex ? "activeProject" : ""
+        //   }`}
+        // >
+        //   <a
+        //     href={project.projectLink}
+        //     target="_blank"
+        //     rel="noreferrer"
+        //     className="projectLink"
+        //   >
+        //     <div className={`imageContainer ${project.imageClass}`}></div>
+        //   </a>
+        // </div>
+        
+        
+        <img 
+          src={project.src}
           key={index}
           className={`projectContainerWide ${
             index === activeIndex ? "activeProject" : ""
-          }`}
-        >
-          <a
-            href={project.projectLink}
-            target="_blank"
-            rel="noreferrer"
-            className="projectLink"
-          >
-            <div className={`imageContainer ${project.imageClass}`}></div>
-          </a>
-        </div>
+          }` }
+          onClick={() => window.open(project.projectLink, "_blank") }
+        />
+        
       ))}
     </div>
   );

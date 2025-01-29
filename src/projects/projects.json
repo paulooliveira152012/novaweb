@@ -1,46 +1,43 @@
 [
     {
+      "projectTitle": "ACJ Auto Repair",
+      "projectLink": "https://acj-1kf9y74kq-paulo-oliveiras-projects-d0079d90.vercel.app/",
+      "projectDescription": "For ACJ Auto Repair, we developed a dynamic and user-friendly React web application designed to enhance the shop’s online presence and streamline appointment scheduling. The platform features an intuitive interface that allows customers to easily request services and book appointments. By integrating Google Calendar, we provided seamless synchronization for both customers and the repair shop, ensuring efficient scheduling and real-time availability updates. This project not only promotes ACJ Auto Repair’s services but also optimizes the customer experience, allowing for a smooth and hassle-free booking process.",
+      "imageClass": "acj",
+      "imageSrc": "acj",
+      "src": "/src/assets/images/projectsScreenshot/acj.jpg"
+    },
+    {
+      "projectTitle": "Whiteway Petshop",
+      "projectLink": "https://whitewaypetshop.vercel.app/",
+      "projectDescription": "White Way Petshop was designed and developed with a fun and friendly personality, featuring a responsive layout and user-friendly interactivity to ensure an engaging experience for pet lovers.",
+      "imageClass": "whiteway",
+      "imageSrc": "whiteway",
+      "src": "/src/assets/images/projectsScreenshot/whiteway.jpg"
+    },
+    {
+      "projectTitle": "Attorney",
+      "projectLink": "https://attorneydemo.vercel.app/",
+      "projectDescription": "A clean, professional, and user-friendly website designed for attorneys to showcase their services, provide essential information, and include an intuitive intake submission system for client inquiries.",
+      "imageClass": "attorney",
+      "imageSrc": "attorney",
+      "src": "/src/assets/images/projectsScreenshot/attorney.jpg"
+    },
+    {
+      "projectTitle": "Hikari",
+      "projectLink": "https://hikarishopx-e0ede5b8b8e6.herokuapp.com/",
+      "projectDescription": "I developed a full-stack web application using React for a dynamic and responsive user interface, Node.js and Express.js for a robust backend, and MongoDB for scalable data storage. The app integrates Python scripts for data preprocessing, AWS for secure cloud storage with S3 buckets, and is deployed on Heroku with CI/CD pipelines using GitHub Actions to ensure continuous delivery and high performance.",
+      "imageClass": "hikari",
+      "imageSrc": "hikari",
+      "src": "/src/assets/images/projectsScreenshot/hikari.jpg"
+    },
+    {
       "projectTitle": "Cristãos",
       "projectLink": "https://cristaosweb-e5a94083e783.herokuapp.com/",
       "projectDescription": "I developed Cristaos, a full-stack web application, using React for an interactive user interface and Node.js/Express.js for the backend. The app supports real-time communication with Socket.IO, enabling live chat rooms and content sharing. It integrates MongoDB for flexible data storage and AWS S3 for secure image uploads. Deployed on Heroku, the app allows users to create blogs, share images, polls, and links, offering a seamless, dynamic experience across different content types.",
-      "imageSrc": "cristaos"
-    },
-      {
-        "projectTitle": "Hikari",
-        "projectLink": "https://hikarishopx-e0ede5b8b8e6.herokuapp.com/",
-        "projectDescription": "I developed a full-stack web application using React for a dynamic and responsive user interface, Node.js and Express.js for a robust backend, and MongoDB for scalable data storage. The app integrates Python scripts for data preprocessing, AWS for secure cloud storage with S3 buckets, and is deployed on Heroku with CI/CD pipelines using GitHub Actions to ensure continuous delivery and high performance.",
-        "imageClass": "hikari",
-        "imageSrc": "hikari"
-      },
-      {
-        "projectTitle": "Grads",
-        "projectLink": "https://paulooliveira152012.github.io/grads/",
-        "projectDescription": "I developed Grads App, a landing webpage designed to showcase and promote a mobile application. Using HTML, CSS, JavaScript, Bootstrap, and jQuery, I created a modern, visually appealing site that effectively advertises the product. The site provides a seamless user experience, highlighting key features of the mobile app through engaging visuals and responsive design. It serves as a professional marketing tool, drawing attention to the app and encouraging users to explore and download it.",
-        "imageClass": "grads",
-        "imageSrc": "grads"
-      },
-      {
-        "projectTitle": "La Union Tire Inc.",
-        "projectLink": "https://paulooliveira152012.github.io/launiontireinc/",
-        "projectDescription": "La Union Tire Inc. is a tire shop with a landing page built using HTML, JavaScript, and CSS. It provides essential information about services and invites visitors to explore further.",
-        "imageClass": "laUnionImg",
-        "imageSrc": "launion"
-      },
-      {
-        "projectTitle": "Weather App",
-        "projectLink": "https://paulooliveira152012.github.io/weather/",
-        "projectDescription": "Weather Dashboard: A web application utilizing HTML, CSS, and JavaScript to fetch real-time weather data via the OpenWeatherMap API. Users can search cities, view climate information, revisit searches, and manage a history of previous queries.",
-        "imageClass": "weatherApp",
-        "imageSrc": "weatherapp"
-      },
-      {
-        "projectTitle": "ACJ Auto Repair",
-        "projectLink": "https://acj-1kf9y74kq-paulo-oliveiras-projects-d0079d90.vercel.app/",
-        "projectDescription": "For ACJ Auto Repair, we developed a dynamic and user-friendly React web application designed to enhance the shop’s online presence and streamline appointment scheduling. The platform features an intuitive interface that allows customers to easily request services and book appointments. By integrating Google Calendar, we provided seamless synchronization for both customers and the repair shop, ensuring efficient scheduling and real-time availability updates. This project not only promotes ACJ Auto Repair’s services but also optimizes the customer experience, allowing for a smooth and hassle-free booking process.",
-        "imageClass": "acj",
-        "imageSrc": "acj"
-      }
-      
-  
+      "imageSrc": "cristaos",
+      "src": "/src/assets/images/projectsScreenshot/cristaos.jpg"
+
+    }
     ]
     

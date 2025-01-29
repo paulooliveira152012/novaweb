@@ -5,27 +5,14 @@ import "../styles/style.css";
 import "../styles/Portfolio.css"; // New CSS file for improved styles
 import projectList from "../projects/projects.json"; // Import the project data
 
-// Import images
-import placeHolder from "../assets/images/logo_white.svg";
 
-import cristaos from "../assets/images/projectsScreenshot/cristaos.png";
-import hikari from "../assets/images/projectsScreenshot/hikari.png";
-import grads from "../assets/images/projectsScreenshot/grads.png";
-import launion from "../assets/images/projectsScreenshot/launion.png";
-import weatherapp from "../assets/images/projectsScreenshot/weather.png";
-import acj from "../assets/images/projectsScreenshot/acj.png";
+
+
 
 const Portfolio = () => {
   const navigate = useNavigate();
 
-  const images = {
-    cristaos,
-    hikari,
-    grads,
-    launion,
-    weatherapp,
-    acj,
-  };
+
 
   return (
     <>
@@ -42,14 +29,14 @@ const Portfolio = () => {
             {/* Services Section */}
             <div className="listOfItemsContainer">
               {projectList.map((project, index) => (
-                <a href={project.projectLink} target="_blank">
-                  <div key={index} className="serviceCard">
+                <a href={project.projectLink} target="_blank" key={index}>
+                  <div className="serviceCard">
                     {/* Use the project image class (or a placeholder if no image is provided) */}
                     <div>
                     <img
-                      src={images[project.imageSrc]} // Replace with dynamic image path if needed
+                      src={project.src} // Replace with dynamic image path if needed
                       alt={project.projectTitle}
-                      className={project.className}
+                      className={`portfolioPageImg ${project.className}`}
                     />
                     </div>
 
