@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div style={{ textAlign: "center" }}>
       {/* hero */}
-      <Header className={"absoluteHeader blackHeader"} />
+      {/* <Header className={"absoluteHeader blackHeader"} /> */}
       <Hero />
       {/* BusinessInfo component */}
       <section className="underHero">

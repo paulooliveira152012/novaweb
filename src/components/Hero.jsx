@@ -1,6 +1,8 @@
 import "../styles/style.css";
 import "../styles/hero.css";
 import { useNavigate } from "react-router-dom";
+import heroImg from "../assets/images/heronovaimage.jpg"
+import Header from "./Header";
 // import video from "../assets/videos/heroVideo.MP4";
 
 const Hero = () => {
@@ -24,7 +26,9 @@ const Hero = () => {
     // </div>
 
 
- <div className="hero" role="banner" aria-labelledby="motor picture">
+    <div className="hero" role="banner" aria-labelledby="motor picture">
+  <Header className="blackHeader transparent"/>
+   <img className="heroImg" src={heroImg} />
       <div className="darkHeroOverlay" aria-hidden="true"></div>
       <div className="heroContent">
          <h1>
