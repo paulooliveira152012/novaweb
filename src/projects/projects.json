@@ -4,39 +4,34 @@
       "projectLink": "https://acj-1kf9y74kq-paulo-oliveiras-projects-d0079d90.vercel.app/",
       "projectDescription": "For ACJ Auto Repair, we developed a dynamic and user-friendly React web application designed to enhance the shop’s online presence and streamline appointment scheduling. The platform features an intuitive interface that allows customers to easily request services and book appointments. By integrating Google Calendar, we provided seamless synchronization for both customers and the repair shop, ensuring efficient scheduling and real-time availability updates. This project not only promotes ACJ Auto Repair’s services but also optimizes the customer experience, allowing for a smooth and hassle-free booking process.",
       "imageClass": "acj",
-      "imageSrc": "acj",
-      "src": "/src/assets/images/projectsScreenshot/acj.jpg"
+      "imageSrc": "acj.jpg"
     },
     {
       "projectTitle": "Whiteway Petshop",
       "projectLink": "https://whitewaypetshop.vercel.app/",
       "projectDescription": "White Way Petshop was designed and developed with a fun and friendly personality, featuring a responsive layout and user-friendly interactivity to ensure an engaging experience for pet lovers.",
       "imageClass": "whiteway",
-      "imageSrc": "whiteway",
-      "src": "/src/assets/images/projectsScreenshot/whiteway.jpg"
+      "imageSrc": "whiteway.jpg"
     },
     {
       "projectTitle": "Attorney",
       "projectLink": "https://attorneydemo.vercel.app/",
       "projectDescription": "A clean, professional, and user-friendly website designed for attorneys to showcase their services, provide essential information, and include an intuitive intake submission system for client inquiries.",
       "imageClass": "attorney",
-      "imageSrc": "attorney",
-      "src": "/src/assets/images/projectsScreenshot/attorney.jpg"
+      "imageSrc": "attorney.jpg"
     },
     {
       "projectTitle": "Hikari",
       "projectLink": "https://hikarishopx-e0ede5b8b8e6.herokuapp.com/",
       "projectDescription": "I developed a full-stack web application using React for a dynamic and responsive user interface, Node.js and Express.js for a robust backend, and MongoDB for scalable data storage. The app integrates Python scripts for data preprocessing, AWS for secure cloud storage with S3 buckets, and is deployed on Heroku with CI/CD pipelines using GitHub Actions to ensure continuous delivery and high performance.",
       "imageClass": "hikari",
-      "imageSrc": "hikari",
-      "src": "/src/assets/images/projectsScreenshot/hikari.jpg"
+      "imageSrc": "hikari.jpg"
     },
     {
       "projectTitle": "Cristãos",
       "projectLink": "https://cristaosweb-e5a94083e783.herokuapp.com/",
       "projectDescription": "I developed Cristaos, a full-stack web application, using React for an interactive user interface and Node.js/Express.js for the backend. The app supports real-time communication with Socket.IO, enabling live chat rooms and content sharing. It integrates MongoDB for flexible data storage and AWS S3 for secure image uploads. Deployed on Heroku, the app allows users to create blogs, share images, polls, and links, offering a seamless, dynamic experience across different content types.",
-      "imageSrc": "cristaos",
-      "src": "/src/assets/images/projectsScreenshot/cristaos.jpg"
+      "imageSrc": "cristaos.jpg"
 
     }
     ]

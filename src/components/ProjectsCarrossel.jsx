@@ -7,6 +7,9 @@ const ProjectsCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
+  // Function to dynamically resolve image paths
+  const getImagePath = (imageName) => new URL(`../assets/images/projectsScreenshot/${imageName}`, import.meta.url).href;
+
   useEffect(() => {
     const container = containerRef.current;
 
@@ -54,32 +57,13 @@ const ProjectsCarousel = () => {
       onMouseLeave={() => setIsHovered(false)}
     >
       {projectsList.map((project, index) => (
-        // <div
-        //   key={index}
-        //   className={`projectContainerWide ${
-        //     index === activeIndex ? "activeProject" : ""
-        //   }`}
-        // >
-        //   <a
-        //     href={project.projectLink}
-        //     target="_blank"
-        //     rel="noreferrer"
-        //     className="projectLink"
-        //   >
-        //     <div className={`imageContainer ${project.imageClass}`}></div>
-        //   </a>
-        // </div>
-        
-        
-        <img 
-          src={project.src}
+        <img
           key={index}
-          className={`projectContainerWide ${
-            index === activeIndex ? "activeProject" : ""
-          }` }
-          onClick={() => window.open(project.projectLink, "_blank") }
+          src={getImagePath(project.imageSrc)}
+          className={`projectContainerWide ${index === activeIndex ? "activeProject" : ""}`}
+          onClick={() => window.open(project.projectLink, "_blank")}
+          alt={project.projectTitle}
         />
-        
       ))}
     </div>
   );

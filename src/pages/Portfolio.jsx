@@ -5,14 +5,12 @@ import "../styles/style.css";
 import "../styles/Portfolio.css"; // New CSS file for improved styles
 import projectList from "../projects/projects.json"; // Import the project data
 
-
-
-
-
 const Portfolio = () => {
   const navigate = useNavigate();
 
-
+  // Function to dynamically resolve image paths
+  const getImagePath = (imageName) =>
+    new URL(`../assets/images/projectsScreenshot/${imageName}`, import.meta.url).href;
 
   return (
     <>
@@ -34,7 +32,7 @@ const Portfolio = () => {
                     {/* Use the project image class (or a placeholder if no image is provided) */}
                     <div>
                     <img
-                      src={project.src} // Replace with dynamic image path if needed
+                      src={getImagePath(project.imageSrc)} // Replace with dynamic image path if needed
                       alt={project.projectTitle}
                       className={`portfolioPageImg ${project.className}`}
                     />

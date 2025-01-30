@@ -6,12 +6,12 @@ import "../styles/services.css"; // New CSS file for improved styles
 import { Link } from "react-router-dom";
 
 // Import images
-import development from "../assets/images/services/development.jpg"
-import socialMedia from "../assets/images/services/socialMedia.jpg"
-import visualIdentity from "../assets/images/services/visualIdentity.jpg"
-import webDesign from "../assets/images/services/webDesign.jpg"
+const development = new URL("../assets/images/services/development.jpg", import.meta.url).href;
+const socialMedia = new URL("../assets/images/services/socialMedia.jpg", import.meta.url).href;
+const visualIdentity = new URL("../assets/images/services/visualIdentity.jpg", import.meta.url).href;
+const webDesign = new URL("../assets/images/services/webDesign.jpg", import.meta.url).href;
 
- 
+
 const OurServices = () => {
   const navigate = useNavigate();
 
@@ -20,8 +20,7 @@ const OurServices = () => {
       name: "Web Design",
       description:
         "We develop professional and customized websites, including strategic landing pages for specific campaigns. Our focus is on creating intuitive navigation and an attractive visual experience, with responsive design that adapts perfectly to all devices. Additionally, we optimize each project for SEO, helping your company stand out in search engines.",
-      image: webDesign, // Image of related equipment
-      blogLink: "./blogs"
+      image: webDesign, 
     },
     {
       name: "Development",

@@ -8,7 +8,9 @@ import "../styles/blog.css";
 import development from "../assets/images/services/development.jpg"
 import socialMedia from "../assets/images/services/socialMedia.jpg"
 import visualIdentity from "../assets/images/services/visualIdentity.jpg"
-import webDesign from "../assets/images/services/webDesign.jpg"
+// import webDesign from "../assets/images/services/webDesign.jpg"
+const webDesign = new URL("../assets/images/services/webDesign.jpg", import.meta.url).href;
+
 
 
 const blogs = [
