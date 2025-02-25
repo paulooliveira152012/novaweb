@@ -1,5 +1,6 @@
 import '../styles/servicesNova.css';
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 const services = [
   "Modern, responsive, and user-focused websites designed to captivate your audience and deliver exceptional user experiences across all devices.",
@@ -36,7 +37,13 @@ const Services = () => {
 
     return (
         <div className='servicesContainer'>
-
+        
+        <motion.div
+            initial={{ opacity: 1, scale:1, x: 150 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }} // Ensures it only animates once when 20% of it is in view
+        >
         <h3 className='servicesTitle'>Creative and technological solutions to <br /> strengthen your online presence</h3>
 
         <div className="ServicesWrapper">
@@ -78,6 +85,7 @@ const Services = () => {
                 </div>
             </div>
         </div>
+        </motion.div>
         </div>
     );
 };
