@@ -1,4 +1,4 @@
-import '../styles/servicesNova.css';
+import '../styles/components/servicesNova.css';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 

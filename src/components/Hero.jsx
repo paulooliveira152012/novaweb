@@ -5,6 +5,7 @@ import heroImg from "../assets/images/heronovaimage.jpg";
 import Header from "./Header";
 import Elipse from "../assets/images/Ellipse.svg"
 // import video from "../assets/videos/heroVideo.MP4";
+import Starfield from "../components/Starfield";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -28,6 +29,8 @@ const Hero = () => {
 
     <div className="hero" role="banner" aria-labelledby="motor picture">
       <Header className="blackHeader transparent" />
+      {/* <div className="stars"></div>  */}
+      <Starfield />
       <img className="heroImg" />
       <div className="darkHeroOverlay" aria-hidden="true"></div>
       <div className="heroContent">

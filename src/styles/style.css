@@ -110,6 +110,45 @@
         padding-bottom: 100px;
     }
 
+    .underHero {
+        /* background-color: red; */
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+        box-sizing: border-box !important;
+        /* font-family: 'Neue Haas Display'; */
+        position: relative;
+    }
+
+    .underHero img {
+        /* background-color: green; */
+        position: absolute;
+        height: 100%;
+        overflow: auto;
+        /* width: 100%; */
+        bottom: 0;
+        /* left: -100px; */
+        float: left;
+    }
+
+    .Effect {
+        /* background-color: red; */
+        position: absolute;
+        height: 120%;
+        top: 60%;
+        left: 0;
+    }
+
+    @media screen and (max-width: 700px) {
+        .underHero {
+            /* background-color: purple; */
+            flex-direction: column;
+        }
+    }
+
+
+
     .lastContainerWithBorder {
         background-color: red;
     }
@@ -501,22 +540,11 @@ nav a {
 
 
 
-.underHero {
-    /* background-color: #EEEEEE; */
-    /* background-color: green; */
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 50px;
-    box-sizing: border-box !important;
-    /* font-family: 'Neue Haas Display'; */
-}
-
 .intro {
     width: 100% !important;
     margin: 80px auto;
     text-align: left;
+    /* background-color: red; */
 }
 
 @media screen and (max-width: 500px) {
