@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
+import developer from "../assets/images/developer.jpg"
+import design from "../assets/images/design.png"
 import placeholder from "../assets/images/placeholder.png"
 import placeholderGirl from "../assets/images/placeholderGirl.png"
 import "../styles/style.css";
@@ -47,7 +49,7 @@ const About = () => {
                 <div>
                   {/* image div */}
                   <div className="imgContainer">
-                    <img src={placeholder}></img>
+                    <img src={developer}></img>
                   </div>
                   {/* whriting div */}
                   <div>
@@ -67,10 +69,10 @@ const About = () => {
                 <div>
                   {/* image div */}
                   <div className="imgContainer">
-                  <img src={placeholderGirl}></img>
+                  <img src={design}></img>
                   </div>
                   {/* written div */}
-                  <div>
+                  {/* <div>
                     <div className="flex">
                       <h3>Gabi</h3>
                       <span>Co-founder, Design and Creative</span>
@@ -81,6 +83,15 @@ const About = () => {
                       experiences. Her work is driven by creativity, aesthetics,
                       and a constant pursuit of solutions that merge beauty and
                       functionality.
+                    </p>
+                  </div> */}
+                  <div>
+                    <div className="flex">
+                      <h3>Design Team</h3>
+                      <span>Creative, Functional, Impactful</span>
+                    </div>
+                    <p>
+                    A team passionate about bringing ideas to life and transforming concepts into unforgettable visual experiences. Driven by creativity, aesthetics, and the pursuit of solutions that merge beauty and functionality
                     </p>
                   </div>
                 </div>
