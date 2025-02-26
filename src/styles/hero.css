@@ -37,6 +37,15 @@
     /* padding: 20px; */
     /* box-shadow: 0px 0px 10px grey; */
     border-radius: 10px;
+    /* background-color: red; */
+}
+
+.hero .ellipse {
+    position: absolute;
+    width: 100vw;
+    /* height: 50vh; */
+    /* background-color: red; */
+    bottom: 100px;
 }
 
 .darkHeroOverlay {
@@ -133,5 +142,15 @@
         bottom: 10px;
         border-radius: 20px; */
         /* text-shadow: 1px 2px 17px black; */
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+    
+    .hero .ellipse {
+        bottom: 200px;
+        /* display: none; */
     }
 }

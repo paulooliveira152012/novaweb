@@ -37,11 +37,11 @@
 
 /* BurgerMenu Styles for Light Background */
 .header.blackHeader .burgerMenuContainer .bar {
-    background-color: black; /* Black bars for light backgrounds */
+    background-color: white; /* Black bars for light backgrounds */
 }
 
 .header.blackHeader a {
-    color: black;
+    color: white;
 }
 
 .header.blackHeader .branding .title {
