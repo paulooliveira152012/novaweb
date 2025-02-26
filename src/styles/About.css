@@ -79,14 +79,12 @@ width: 100%;
 }
 
 .contentContainer .aboutTeam .imgContainer {
-    background-color: pink;
     width: 100%;
     height: 50vh;
     border-radius: 20px;
     margin: auto;
     margin-bottom: 20px;
     min-height: 30vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
