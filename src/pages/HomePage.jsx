@@ -43,7 +43,7 @@ const Home = () => {
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }} // Ensures it only animates once when 20% of it is in view
         >
-          <h3>Our Mission</h3>
+          <h3>OUR MISSION</h3>
           {/* <img src={Effect} className="Effect" /> */}
 
           {/* <img src={Effect}/> */}
@@ -84,7 +84,7 @@ const Home = () => {
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }} // Ensures it only animates once when 20% of it is in view
         >
-          <h3>Portfolio</h3>
+          <h3>PORTFOLIO</h3>
           {/* <img src={Effect} className="Effect" /> */}
 
           {/* <img src={Effect}/> */}
@@ -122,7 +122,7 @@ const Home = () => {
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }} // Ensures it only animates once when 20% of it is in view
         >
-          <h3>Dedicated to Your Success</h3>
+          <h3>DEDICATED TO YOUR SUCCESS</h3>
           {/* <img src={Effect} className="Effect" /> */}
 
           {/* <img src={Effect}/> */}
@@ -147,13 +147,13 @@ const Home = () => {
       <section className="underHero" style={{height: "auto"}}>
         {/* left */}
         <motion.div
-          className="intro"
+          className="intro lastIntro"
           initial={{ opacity: 0, scale: 0.8, x: -150 }}
           whileInView={{ opacity: 1, scale: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }} // Ensures it only animates once when 20% of it is in view
         >
-          <h3>Get in touch.</h3>
+          <h3>GET IN TOUCH.</h3>
           {/* <img src={Effect} className="Effect" /> */}
 
           {/* <img src={Effect}/> */}

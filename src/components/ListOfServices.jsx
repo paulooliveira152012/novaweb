@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import "../styles/style.css";
 
 const services = [
-    "Websites",
-    "Social Media",
-    "Landing Pages",
-    "E-Commerces"
+    "WEBSITES",
+    "SOCIAL MEDIA",
+    "LANDING PAGES",
+    "E-COMMERCES"
 ];
 
 const ListOfServices = () => {
@@ -23,7 +23,7 @@ const ListOfServices = () => {
         <div className="ListOfServicesContainer">
             {services.map((service, index) => (
                 <Link key={index} to={`/our-services?scrollTo=${service}`}>
-                    <h2 className={index === activeIndex ? "highlighted" : ""}>
+                    <h2 className={`listOfServicesH2 ${index === activeIndex ? "highlighted" : ""}`}>
                         {service}
                     </h2>
                 </Link>

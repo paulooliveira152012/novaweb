@@ -13,6 +13,8 @@ import Footer from "../components/Footer.jsx";
 import ScrollToTop from "../helper/ScrollToTop.jsx";
 import "../styles/style.css";
 
+import "../styles/fonts.css"
+
 
 
 

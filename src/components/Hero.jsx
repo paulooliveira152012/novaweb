@@ -1,5 +1,5 @@
 import "../styles/style.css";
-import "../styles/hero.css";
+import "../styles/components/hero.css";
 import { useNavigate } from "react-router-dom";
 import heroImg from "../assets/images/heronovaimage.jpg";
 import Header from "./Header";
