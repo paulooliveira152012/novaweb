@@ -157,7 +157,7 @@
 
     @media screen and (max-width: 700px) {
         .underHero {
-            background-color: purple;
+            /* background-color: purple; */
             flex-direction: column;
         }
 
