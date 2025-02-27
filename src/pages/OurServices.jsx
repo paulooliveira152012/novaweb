@@ -1,101 +1,102 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import Header from "../components/Header";
-import { useNavigate } from "react-router-dom";
 import "../styles/style.css";
-import "../styles/services.css"; // New CSS file for improved styles
+import "../styles/services.css";
 import { Link } from "react-router-dom";
 
 // Import images
-const development = new URL("../assets/images/services/development.jpg", import.meta.url).href;
-const socialMedia = new URL("../assets/images/services/socialMedia.jpg", import.meta.url).href;
-const visualIdentity = new URL("../assets/images/services/visualIdentity.jpg", import.meta.url).href;
-const webDesign = new URL("../assets/images/services/webDesign.jpg", import.meta.url).href;
-
+const websitesImg = new URL("../assets/images/services/webDesign.jpg", import.meta.url).href;
+const socialMediaImg = new URL("../assets/images/services/socialMedia.jpg", import.meta.url).href;
+const landingPagesImg = new URL("../assets/images/services/landingPages.jpg", import.meta.url).href;
+const ecommercesImg = new URL("../assets/images/services/ecommerces.jpg", import.meta.url).href;
 
 const OurServices = () => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const services = [
     {
-      name: "Web Design",
+      name: "Websites",
       description:
-        "We develop professional and customized websites, including strategic landing pages for specific campaigns. Our focus is on creating intuitive navigation and an attractive visual experience, with responsive design that adapts perfectly to all devices. Additionally, we optimize each project for SEO, helping your company stand out in search engines.",
-      image: webDesign, 
-    },
-    {
-      name: "Development",
-      description:
-        "We build custom web applications tailored to your company's specific needs. This includes dynamic platforms, online management systems, and interactive tools that streamline processes and provide a superior user experience.",
-      image: development,
-    },
-    {
-      name: "Visual Identity",
-      description:
-        "We create impactful visual identities that reflect your brand’s values and essence. Our services include designing logos, color palettes, typography, and other graphic elements that ensure consistency and strengthen your company's recognition in the market.",
-      image: visualIdentity,
+        "We create stunning, high-performance websites tailored to your business needs. From corporate sites to personal portfolios, we focus on responsive design and user experience to enhance your online presence.",
+      image: websitesImg,
+      id: "Websites",
     },
     {
       name: "Social Media",
       description:
-        "We plan and create strategic content for social media, including original and creative posts that reinforce your brand’s identity. Our approach aims to build a solid digital presence, engage your audience, and generate real results for your business.",
-      equipment: ["Battery Testing Kit", "Alternator Testing Tools"],
-      image: socialMedia,
+        "Our social media services include content creation, branding strategies, and engagement techniques to help you grow your online audience and build a strong brand presence.",
+      image: socialMediaImg,
+      id: "Social Media",
+    },
+    {
+      name: "Landing Pages",
+      description:
+        "We design conversion-focused landing pages optimized for marketing campaigns, lead generation, and promotions. Our approach ensures seamless integration with your advertising strategy.",
+      image: landingPagesImg,
+      id: "Landing Pages",
+    },
+    {
+      name: "E-Commerces",
+      description:
+        "We develop high-quality e-commerce websites that provide seamless shopping experiences. Whether you're selling physical or digital products, we build secure and scalable online stores tailored to your needs.",
+      image: ecommercesImg,
+      id: "E-Commerces",
     },
   ];
-  
+
+  // Extract `scrollTo` query parameter and scroll to the corresponding section
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const scrollTo = params.get("scrollTo");
+    if (scrollTo) {
+      const targetElement = document.getElementById(scrollTo);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   return (
     <section>
       <Header className="blackHeader" />
       <div className="contentContainer">
         <div className="session padding">
-        <article>
-          <h2 className="pageTitle">Services</h2>
-          {/* <h1>Our Services</h1> */}
-          <p>
-          At Nova, we transform ideas into reality by offering tailored digital solutions for small and medium-sized businesses. Our services are designed to help your business thrive in the digital world with creative, functional, and high-quality strategies.
-          </p>
+          <article>
+            <h2 className="pageTitle">Services</h2>
+            <p>
+              At Nova, we transform ideas into reality by offering tailored digital solutions for small and medium-sized businesses. Our services are designed to help your business thrive in the digital world with creative, functional, and high-quality strategies.
+            </p>
 
-          {/* Services Section */}
-          <div className="listOfItemsContainer">
-            {services.map((service, index) => (
-                <Link to={`/blogs/${service.name}`}>
-              <div key={index} className="serviceCard">
-                <div>
-                <h2>{service.name}</h2>
-                <p>{service.description}</p>
+            {/* Services Section */}
+            <div className="listOfItemsContainer">
+              {services.map((service, index) => (
+                <div key={index} id={service.id} className="serviceCard">
+                  <div>
+                    <h2>{service.name}</h2>
+                    <p>{service.description}</p>
+                  </div>
+                  <div>
+                    <img src={service.image} alt={service.name} />
+                  </div>
                 </div>
-                <div>
-                <img
-                  src={service.image}
-                  alt={service.name}
-                />
-                </div>
-              </div>
-                </Link>
-            ))}
+              ))}
+            </div>
+          </article>
+
+          {/* Contact Button */}
+          <div className="buttonContainer">
+            <button onClick={() => navigate("/contact-us")} className="regularButton">
+              Contact Us
+            </button>
+            <button onClick={() => navigate("/portfolio")} className="regularButton">
+              See our work
+            </button>
           </div>
-        </article>
-        {/* Contact Button */}
-        <div className="buttonContainer">
-          <button
-            onClick={() => navigate("/contact-us")}
-            className="regularButton"
-          >
-            Contact Us
-          </button>
-
-          <button
-            onClick={() => navigate("/portfolio")}
-            className="regularButton"
-          >
-            See our work
-          </button>
         </div>
-        </div>
-
       </div>
-    </ section>
+    </section>
   );
 };
 

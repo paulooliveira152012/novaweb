@@ -2,7 +2,7 @@
 /* Specific image styles */
 
 .projectsContainer {
-    background-color: white;
+    /* background-color: red; */
     display: flex; /* Align items in a row */
     gap: 20px; /* Add space between items */
     padding: 10px; /* Add padding around the container */
@@ -17,7 +17,7 @@
 
 
 .centeredContainer {
-    background-color: green;
+    /* background-color: green; */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@
 }
 
 .centeredContainer form {
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
 }

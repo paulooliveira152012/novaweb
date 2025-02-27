@@ -2,9 +2,11 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Circle from "../components/circle";
 import Services from "../components/Services";
+import ListOfServices from "../components/ListOfServices";
 import { motion } from "framer-motion";
 import ProjectsCarousel from "../components/ProjectsCarrossel";
 import Effect from "../assets/images/effect.svg";
+import BottomEffect from "../components/BottomEfect";
 
 // delete if not recyclable
 // import CarTypesServices from "../components/CarTypeServices";
@@ -71,11 +73,48 @@ const Home = () => {
         viewport={{ once: true, amount: 0.2 }} // Ensures it only animates once when 20% of it is in view
       > */}
       <Circle />
-      
-      <Services />
-      {/* </motion.div> */}
+
+      <section className="underHero">
+        {/* left */}
+        <motion.div
+          className="intro"
+          initial={{ opacity: 0, scale: 0.8, x: -150 }}
+          whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }} // Ensures it only animates once when 20% of it is in view
+        >
+          <h3>Portfolio</h3>
+          {/* <img src={Effect} className="Effect" /> */}
+
+          {/* <img src={Effect}/> */}
+        </motion.div>
+
+        {/* right */}
+        <motion.div
+          className="intro"
+          initial={{ opacity: 0, scale: 0.8, x: 150 }}
+          whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.5}} // Ensures it only animates once when 20% of it is in view
+        >
+          <p>
+          Our portfolio showcases our commitment to creating innovative digital solutions that drive businesses forward. At Nova, we believe design and technology can turn ideas into great opportunities.
+
+          </p>
+        </motion.div>
+      </section>
 
       <ProjectsCarousel />
+
+      <ListOfServices />
+
+      <BottomEffect />
+
+
+
+      {/* <Services /> */}
+      {/* </motion.div> */}
+
     </div>
   );
 };
