@@ -23,7 +23,12 @@ const About = () => {
                 <article className="aboutIntro paddingContainer">
                   <h3 className="pageTitle"> About us</h3>
                   <p>
-                  Our goal is to provide creative and functional solutions that help businesses stand out in the digital world. We focus on each client’s unique needs to deliver a high-quality and innovative digital presence. Driven by passion, we help businesses thrive and bring creative ideas to life.
+                    Our goal is to provide creative and functional solutions
+                    that help businesses stand out in the digital world. We
+                    focus on each client’s unique needs to deliver a
+                    high-quality and innovative digital presence. Driven by
+                    passion, we help businesses thrive and bring creative ideas
+                    to life.
                   </p>
                 </article>
                 <div className="aboutLogoContainer">
@@ -31,36 +36,81 @@ const About = () => {
                 </div>
               </div>
 
-
-              <article className="aboutTeam whiteBg paddingContainer">
-                <p>Team</p>
-                <div>
-                  {/* image div */}
-                  <div className="imgContainer">
-                    <img src={developer}></img>
-                  </div>
-                  {/* whriting div */}
-                  <div>
-                    <div className="flex">
-                      <h3>Paulo</h3>
-                      <span>Founder, developer and Idealist</span>
+              {/* white section */}
+              <div className="aboutTeam whiteBg paddingContainer">
+                <h3>OUR VALUES</h3>
+                <article>
+                  {/* our values */}
+                  <div className="ourValuesContainer">
+                    <div>
+                      <p>Our Team – The people behind Nova’s success</p>
+                      <p>
+                        Together, we bring a wealth of experience and a shared
+                        commitment to excellence, collaboration, and growth. Our
+                        diverse team’s passion and expertise drive our mission,
+                        ensuring exceptional results every day.
+                      </p>
                     </div>
-                    <p>
-                      With a forward-thinking vision, Paulo blends his skills as
-                      a developer with a passion for entrepreneurship and
-                      creating projects that make a difference. His mission is
-                      to build technological solutions that have a positive
-                      impact on society.
-                    </p>
+                    <div>
+                      <p>Our Expertise – Empowering Possibilities</p>
+                      <p>
+                        Our expertise is the foundation of our innovation and
+                        success. With deep industry knowledge and cutting-edge
+                        skills, we turn possibilities into impactful solutions.
+                      </p>
+                    </div>
+                    <div>
+                      <p>
+                        Our Presence – Connecting Businesses to the Digital
+                        World
+                      </p>
+                      <p>
+                        At Nova, we expand our reach to connect businesses with
+                        new opportunities in the digital world. Our presence in
+                        the market allows us to deliver innovative solutions and
+                        drive the growth of our clients.
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div>
-                  {/* image div */}
-                  <div className="imgContainer">
-                    <img src={design}></img>
+                </article>
+
+                {/* working here... */}
+
+                <article className="aboutTeam">
+                  <h3>OUR TEAM</h3>
+                  {/* flex container */}
+
+                  <div className="flex">
+                  {/* block container developer */}
+                  <div>
+                    {/* image div */}
+                    <div className="imgContainer">
+                      <img src={developer}></img>
+                    </div>
+                    {/* whriting div */}
+                    <div>
+                      <div>
+                        <h3>Paulo</h3>
+                        <span>Founder, developer and Idealist</span>
+                      </div>
+                      <p>
+                        With a forward-thinking vision, Paulo blends his skills
+                        as a developer with a passion for entrepreneurship and
+                        creating projects that make a difference. His mission is
+                        to build technological solutions that have a positive
+                        impact on society.
+                      </p>
+                    </div>
                   </div>
-                  {/* written div */}
-                  {/* <div>
+
+                  {/* block container design team*/}
+                  <div>
+                    {/* image div */}
+                    <div className="imgContainer">
+                      <img src={design}></img>
+                    </div>
+                    {/* written div */}
+                    {/* <div>
                     <div className="flex">
                       <h3>Gabi</h3>
                       <span>Co-founder, Design and Creative</span>
@@ -73,26 +123,29 @@ const About = () => {
                       functionality.
                     </p>
                   </div> */}
-                  <div>
-                    <div className="flex">
-                      <h3>Design Team</h3>
-                      <span>Creative, Functional, Impactful</span>
+                    <div>
+                      <div >
+                        <h3>Design Team</h3>
+                        <span>Creative, Functional, Impactful</span>
+                      </div>
+                      <p>
+                        A team passionate about bringing ideas to life and
+                        transforming concepts into unforgettable visual
+                        experiences. Driven by creativity, aesthetics, and the
+                        pursuit of solutions that merge beauty and functionality.
+                      </p>
                     </div>
-                    <p>
-                      A team passionate about bringing ideas to life and
-                      transforming concepts into unforgettable visual
-                      experiences. Driven by creativity, aesthetics, and the
-                      pursuit of solutions that merge beauty and functionality
-                    </p>
                   </div>
-                </div>
-              </article>
+                  </div>
+                </article>
 
-              <div className="phrase">
-                Building Digital Dreams, One Pixel at a Time.
+
               </div>
+              {/* end of white */}
 
-              <div className="buttonContainer">
+              <div className="getInTouch paddingContainer">
+              <h3>GET IN TOUCH</h3>
+              <div className="aboutButtonContainer">
                 <button
                   onClick={() => navigate("/portfolio")}
                   className="regularButton"
@@ -100,6 +153,9 @@ const About = () => {
                   See our work
                 </button>
               </div>
+              </div>
+
+
             </div>
           </div>
 
