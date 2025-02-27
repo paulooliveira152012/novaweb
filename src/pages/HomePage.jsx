@@ -16,7 +16,7 @@ import "../styles/style.css";
 
 const Home = () => {
   return (
-    <div style={{ textAlign: "center" }}>
+    <div className="blackWrapper">
       {/* hero */}
       {/* <Header className={"absoluteHeader blackHeader"} /> */}
       <Hero />
@@ -172,11 +172,6 @@ const Home = () => {
           </button>
         </motion.div>
       </section>
-
-
-      <BottomEffect/>
-
-
 
       {/* <Services /> */}
       {/* </motion.div> */}
