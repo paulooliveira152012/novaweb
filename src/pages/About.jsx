@@ -1,14 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
-import developer from "../assets/images/developer.jpg"
-import design from "../assets/images/design.png"
-import placeholder from "../assets/images/placeholder.png"
-import placeholderGirl from "../assets/images/placeholderGirl.png"
+import developer from "../assets/images/developer.jpg";
+import design from "../assets/images/design.png";
 import "../styles/style.css";
 import "../styles/About.css";
 import Arrow from "../assets/icons/arrow";
-import Logo from "../assets/images/logoHero.png"
+import Logo from "../assets/images/logoHero.png";
 
 const About = () => {
   const navigate = useNavigate();
@@ -19,30 +17,29 @@ const About = () => {
         <div className="content">
           <div className="shaddowEffectContainer">
             <div className="session" style={{ marginBottom: 0 }}>
-              {/* <div className="teamPicture">
-          <h1>Helping businesses since 2024</h1>
-          </div> */}
-          <div className="aboutUsHero">
-              <article className="aboutIntro">
-                <h2 className="pageTitle"> The Nova</h2>
-                <p>
-                  Nova was inspired by the supernova, a cosmic phenomenon of
-                  transformation and rebirth. Just as this star marks a new
-                  cycle in the universe, we aim to be the starting point for the
-                  new digital chapter of small and medium-sized businesses.
-                </p>
-                <p>
-                  Our goal is to provide creative and functional solutions to
-                  help businesses stand out in the digital world. With a keen
-                  eye on the specific needs of each client, our mission is to
-                  deliver a unique, creative, and high-quality digital presence.
-                  We are driven by the passion to help businesses thrive in this
-                  new digital environment and bring innovative ideas to life.
-                </p>
-              </article>
-              <div className="aboutLogoContainer">
-              <img className="aboutLogo" src={Logo}></img>
-              </div>
+              <div className="aboutUsHero">
+                <article className="aboutIntro">
+                  <h2 className="pageTitle"> The Nova</h2>
+                  <p>
+                    Nova was inspired by the supernova, a cosmic phenomenon of
+                    transformation and rebirth. Just as this star marks a new
+                    cycle in the universe, we aim to be the starting point for
+                    the new digital chapter of small and medium-sized
+                    businesses.
+                  </p>
+                  <p>
+                    Our goal is to provide creative and functional solutions to
+                    help businesses stand out in the digital world. With a keen
+                    eye on the specific needs of each client, our mission is to
+                    deliver a unique, creative, and high-quality digital
+                    presence. We are driven by the passion to help businesses
+                    thrive in this new digital environment and bring innovative
+                    ideas to life.
+                  </p>
+                </article>
+                <div className="aboutLogoContainer">
+                  <img className="aboutLogo" src={Logo}></img>
+                </div>
               </div>
               <article className="aboutTeam">
                 <p>Team</p>
@@ -53,9 +50,9 @@ const About = () => {
                   </div>
                   {/* whriting div */}
                   <div>
-                  <div className="flex">
-                    <h3>Paulo</h3>
-                    <span>Founder, developer and Idealist</span>
+                    <div className="flex">
+                      <h3>Paulo</h3>
+                      <span>Founder, developer and Idealist</span>
                     </div>
                     <p>
                       With a forward-thinking vision, Paulo blends his skills as
@@ -69,7 +66,7 @@ const About = () => {
                 <div>
                   {/* image div */}
                   <div className="imgContainer">
-                  <img src={design}></img>
+                    <img src={design}></img>
                   </div>
                   {/* written div */}
                   {/* <div>
@@ -91,17 +88,19 @@ const About = () => {
                       <span>Creative, Functional, Impactful</span>
                     </div>
                     <p>
-                    A team passionate about bringing ideas to life and transforming concepts into unforgettable visual experiences. Driven by creativity, aesthetics, and the pursuit of solutions that merge beauty and functionality
+                      A team passionate about bringing ideas to life and
+                      transforming concepts into unforgettable visual
+                      experiences. Driven by creativity, aesthetics, and the
+                      pursuit of solutions that merge beauty and functionality
                     </p>
                   </div>
                 </div>
               </article>
 
               <div className="phrase">
-              Building Digital Dreams, One Pixel at a Time.
+                Building Digital Dreams, One Pixel at a Time.
               </div>
-                
-              
+
               <div className="buttonContainer">
                 <button
                   onClick={() => navigate("/portfolio")}
