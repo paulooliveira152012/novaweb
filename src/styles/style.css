@@ -151,6 +151,8 @@
         
     }
 
+    
+
     @media screen and (max-width: 700px) {
         .underHero {
             /* background-color: purple; */
@@ -223,6 +225,14 @@
         justify-content: center;
         /* background-color: red; */
         margin: 100px 0;
+    }
+
+    /* button for hero */
+    .buttonWrapper button {
+        margin-right: 0;
+        float: right;
+        background-color: white;
+        color: black;
     }
 
     

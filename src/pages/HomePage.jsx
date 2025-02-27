@@ -111,7 +111,70 @@ const Home = () => {
 
       <ListOfServices />
 
-      <BottomEffect />
+      {/* dedicated to your success... */}
+
+      <section className="underHero">
+        {/* left */}
+        <motion.div
+          className="intro"
+          initial={{ opacity: 0, scale: 0.8, x: -150 }}
+          whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }} // Ensures it only animates once when 20% of it is in view
+        >
+          <h3>Dedicated to Your Success</h3>
+          {/* <img src={Effect} className="Effect" /> */}
+
+          {/* <img src={Effect}/> */}
+        </motion.div>
+
+        {/* right */}
+        <motion.div
+          className="intro"
+          initial={{ opacity: 0, scale: 0.8, x: 150 }}
+          whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.5}} // Ensures it only animates once when 20% of it is in view
+        >
+          <p>
+          We are committed to giving our clients the attention they deserve. We take the time to understand each business’s unique needs, ensuring personalized solutions that drive real results. Your success is our priority, and we are with you every step of the way.
+
+          </p>
+        </motion.div>
+      </section>
+
+
+      <section className="underHero" style={{height: "auto"}}>
+        {/* left */}
+        <motion.div
+          className="intro"
+          initial={{ opacity: 0, scale: 0.8, x: -150 }}
+          whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }} // Ensures it only animates once when 20% of it is in view
+        >
+          <h3>Get in touch.</h3>
+          {/* <img src={Effect} className="Effect" /> */}
+
+          {/* <img src={Effect}/> */}
+        </motion.div>
+
+        {/* right */}
+        <motion.div
+          className="intro buttonWrapper"
+          initial={{ opacity: 0, scale: 0.8, x: 150 }}
+          whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.5}} // Ensures it only animates once when 20% of it is in view
+        >
+          <button>
+            Contact
+          </button>
+        </motion.div>
+      </section>
+
+
+      <BottomEffect/>
 
 
 
