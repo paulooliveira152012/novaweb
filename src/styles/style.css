@@ -105,7 +105,19 @@
         /*     [horizontal-offset] [vertical-offset] [blur-radius] [spread-radius] [color]; */
         box-shadow: 0px 3px 15px black; /* Smooth red shadow */
     }
-    
+
+    .paddingContainer {
+        padding: 0 50px ;
+    }
+
+    .whiteBg {
+        background-color: white;
+    }
+
+    .whiteBg * {
+        color: black;
+    }
+
 
 
     /* General Content Styling */

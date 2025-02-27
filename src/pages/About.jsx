@@ -5,43 +5,34 @@ import developer from "../assets/images/developer.jpg";
 import design from "../assets/images/design.png";
 import "../styles/style.css";
 import "../styles/About.css";
+import "../styles/Fonts.css";
 import Arrow from "../assets/icons/arrow";
 import Logo from "../assets/images/logoHero.png";
 
 const About = () => {
   const navigate = useNavigate();
   return (
-    <>
+    <div className="blackWrapper">
       <Header className="blackHeader" />
       <div className="contentContainer">
         <div className="content">
           <div className="shaddowEffectContainer">
             <div className="session" style={{ marginBottom: 0 }}>
               <div className="aboutUsHero">
-                <article className="aboutIntro">
-                  <h2 className="pageTitle"> The Nova</h2>
+                {/* padding */}
+                <article className="aboutIntro paddingContainer">
+                  <h3 className="pageTitle"> About us</h3>
                   <p>
-                    Nova was inspired by the supernova, a cosmic phenomenon of
-                    transformation and rebirth. Just as this star marks a new
-                    cycle in the universe, we aim to be the starting point for
-                    the new digital chapter of small and medium-sized
-                    businesses.
-                  </p>
-                  <p>
-                    Our goal is to provide creative and functional solutions to
-                    help businesses stand out in the digital world. With a keen
-                    eye on the specific needs of each client, our mission is to
-                    deliver a unique, creative, and high-quality digital
-                    presence. We are driven by the passion to help businesses
-                    thrive in this new digital environment and bring innovative
-                    ideas to life.
+                  Our goal is to provide creative and functional solutions that help businesses stand out in the digital world. We focus on each client’s unique needs to deliver a high-quality and innovative digital presence. Driven by passion, we help businesses thrive and bring creative ideas to life.
                   </p>
                 </article>
                 <div className="aboutLogoContainer">
                   <img className="aboutLogo" src={Logo}></img>
                 </div>
               </div>
-              <article className="aboutTeam">
+
+
+              <article className="aboutTeam whiteBg paddingContainer">
                 <p>Team</p>
                 <div>
                   {/* image div */}
@@ -129,7 +120,7 @@ const About = () => {
         </div> */}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
