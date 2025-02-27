@@ -10,8 +10,6 @@ const ProjectsCarousel = () => {
   // Function to dynamically resolve image paths
   const getImagePath = (imageName) => new URL(`../assets/images/projectsScreenshot/${imageName}`, import.meta.url).href;
 
-  // const getImagePath = (imageName) => new URL(`../assets/images/Mockups/${imageName}`, import.meta.url).href;
-
   useEffect(() => {
     const container = containerRef.current;
 

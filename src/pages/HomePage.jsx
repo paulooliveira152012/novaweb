@@ -5,7 +5,6 @@ import Services from "../components/Services";
 import ListOfServices from "../components/ListOfServices";
 import { motion } from "framer-motion";
 import ProjectsCarousel from "../components/ProjectsCarrossel";
-import ProjectsCarouselNew from "../components/ProjectsCarrosselNew";
 import Effect from "../assets/images/effect.svg";
 import BottomEffect from "../components/BottomEfect";
 
