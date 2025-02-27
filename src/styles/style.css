@@ -160,7 +160,13 @@
             /* background-color: purple; */
             flex-direction: column;
         }
+
+        .intro {
+            margin: 0px !important;
+        }
     }
+
+
 
 
 
@@ -600,6 +606,8 @@ nav a {
     font-weight: 400;
     font-size: 30px;
     margin-bottom: 10px;
+    line-height: 70px;
+    /* background-color: #1C2AC9; */
 }
 
 .intro p {
