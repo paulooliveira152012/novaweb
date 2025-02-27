@@ -12,7 +12,7 @@ import Logo from "../assets/images/logoHero.png";
 const About = () => {
   const navigate = useNavigate();
   return (
-    <div className="blackWrapper">
+    <div className="blackWrapper aboutPage">
       <Header className="blackHeader" />
       <div className="contentContainer">
         <div className="content">
