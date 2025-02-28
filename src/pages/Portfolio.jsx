@@ -13,7 +13,7 @@ const Portfolio = () => {
     new URL(`../assets/images/projectsScreenshot/${imageName}`, import.meta.url).href;
 
   return (
-    <>
+    <section className="blackWrapper">
       <Header className="blackHeader" />
       <div className="contentContainer padding portfolioPage">
         <div className="session">
@@ -60,7 +60,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
