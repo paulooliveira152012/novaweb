@@ -3,16 +3,14 @@ import { useParams, useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import "../styles/style.css";
 import "../styles/blog.css";
+import { m, motion } from "framer-motion";
 
 // import blogImages
 import development from "../assets/images/services/development.jpg"
 import socialMedia from "../assets/images/services/socialMedia.jpg"
 import visualIdentity from "../assets/images/services/visualIdentity.jpg"
-// import webDesign from "../assets/images/services/webDesign.jpg"
-const webDesign = new URL("../assets/images/services/webDesign.jpg", import.meta.url).href;
-
-
-
+import webDesign from "../assets/images/services/WebDesign.png"
+// const webDesign = new URL("../assets/images/services/webDesign.jpg", import.meta.url).href;
 const blogs = [
   {
     title: "Web Design",
@@ -76,6 +74,15 @@ const blogs = [
   },
 ];
 
+const pageVariants = {
+  hidden: { opacity: 0, y: 30},
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, staggerChildren: 0.2 },
+  },
+}
+
 const Blogs = () => {
   const { blogName } = useParams();
   const [searchQuery, setSearchQuery] = useState("");
@@ -106,7 +113,7 @@ const Blogs = () => {
   };
 
   return (
-    <>
+    <section className="blackWrapper">
       <Header className="blackHeader" />
       <div className="pageContainer">
         <div className="contentContainer blogScreen">
@@ -209,7 +216,7 @@ const Blogs = () => {
           )}
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
