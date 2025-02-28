@@ -6,22 +6,21 @@
     color: white;
     position: relative;
     bottom: 0;
-    /* background-color: #313131; */
     background-color: white;
     padding: 60px 20px;
     box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* Alinha os elementos ao início */
+    align-items: flex-start; /* Alinha os elementos à esquerda */
     font-size: 13px;
 }
 
 .footerContent {
-    /* background-color: green; */
     display: flex;
     width: 100%;
     height: 100%;
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-start; /* Alinha os itens ao topo */
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    flex-direction: column; /* Garante que os itens fiquem um abaixo do outro */
     margin-top: 50px;
 }
 
@@ -30,10 +29,9 @@
 }
 
 .footer .socialMediaIconContainer {
-    /* background-color: red; */
     width: 15%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start; /* Alinha os ícones à esquerda */
 }
 
 /* Attention */
@@ -45,19 +43,16 @@
 .footerContent div {
     width: auto;
     min-height: 150px;
-    /* background-color: blue; */
-    /* margin: 20px; */
 }
 
 .footerContent div ul {
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
 }
 
 .footerContent div ul li {
-    margin-top: 18px;
+    margin-top: 3px; /* Reduzi o espaço entre as linhas */
     display: flex;
     align-items: center;
 }
@@ -65,7 +60,6 @@
 .footerContent a {
     margin: 0;
     padding: 0;
-    /* background-color: red; */
     display: flex;
     align-items: center;
 }
@@ -74,21 +68,19 @@
     width: 100%;
     height: 0.5px;
     background-color: #383535;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 .footer h3 {
-    font-size: 23px !important;
-    color: #0014EB;
+    font-size: 16px !important;
+    color: #000000;
+    font-family: Manrope !important;
 }
-
 
 .footer .section div {
     width: 100%;
     margin: 10px;
 }
-
-
 
 .footer span {
     font-weight: bold;
@@ -100,88 +92,70 @@
 }
 
 .footer .content {
-    /* background-color: purple; */
     display: flex;
     flex-direction: column;
-    flex: 2
+    flex: 2;
 }
 
 .footer .flex {
     display: flex;
-    /* background-color: red; */
     margin-bottom: 60px;
 }
 
 .footer .logoContainer {
-    /* flex: 1; */
-    /* width: 100%; */
-    height: auto;
-    /* background-color: red; */
-    /* display: flex; */
     justify-content: left;
-    /* align-items: center; */
     margin: 20px;
-    /* padding-left: 50px; */
 }
 
-.footer  img {
+.footer img {
     position: absolute;
     top: 20px;
 }
 
 .logoSmallScren {
     width: 100%;
-    /* background-color: red; */
     height: 20px;
 }
 
-
-
+/* Responsivo */
 @media screen and (max-width: 600px) {
     .footer {
         height: 100%;
     }
 
     .footerContent {
-        /* background-color: red; */
         flex-direction: column;
-        align-items: center;
-        /* justify-content: center; */
-        text-align: center;
+        align-items: flex-start; /* Mantém alinhado à esquerda no mobile */
+        text-align: left;
         margin-top: 0;
     }
 
     .footerContent ul {
-        align-items: center;
+        align-items: flex-start;
     }
 
     .footer .socialMediaIconContainer {
-        /* background-color: purple; */
         width: 30% !important; 
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
         margin: 20px 0;        
     }
 
-    .footer .socialMediaIconContainer  {
-        /* background-color: green; */
+    .footer .socialMediaIconContainer {
         scale: 1.5;
-        /* fill: black */
     }
 
     .footer .hideLogo {
         margin-bottom: 50px;
-        /* margin: auto; */
     }
 
     .logoSmallScren {
         display: block;
     }
 
-    .footer  img {
-        position:static;
-        /* top: 0px; */
-        align-self: center;
+    .footer img {
+        position: static;
+        align-self: flex-start;
         margin: auto;
     }
 
