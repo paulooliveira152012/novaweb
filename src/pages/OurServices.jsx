@@ -103,13 +103,15 @@ const OurServices = () => {
               <div className="listOfItemsContainer">
                 {services.map((service, index) => (
                   <motion.div
-                    className="intro"
+                    className="serviceCard"
+                    key={index} 
+                    id={service.id}
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 1.5, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.1 }} // Ensures it only animates once when 20% of it is in view
                   >
-                    <div key={index} id={service.id} className="serviceCard">
+                    
                       <div>
                         <h3>{service.name}</h3>
                         <p>{service.description}</p>
@@ -117,7 +119,7 @@ const OurServices = () => {
                       <div>
                         <img src={service.image} alt={service.name} />
                       </div>
-                    </div>
+                    
                   </motion.div>
                 ))}
               </div>
