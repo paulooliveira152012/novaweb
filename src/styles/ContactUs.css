@@ -17,16 +17,24 @@
 
 
 
-
 .contentContainer .row {
     display: flex;
+    gap: 30px;
     /* background-color: red; */
     /* margin: 0 20px; */
 }
 
+.contentContainer .row h2 {
+  /* background-color: red; */
+  margin: 20px 0;
+  
+}
+
+
+
 .contentContainer .square {
     width: 100%;
-    margin: 0 50px;
+    
     /* background-color: blue; */
     display: flex;
     flex-direction: column;
@@ -43,7 +51,7 @@ form {
   flex-direction: column;
   /* background-color: blue; */
   max-width: 1000px;
-  margin: 0 50px;
+  
 }
 
 form input, textarea {
@@ -53,8 +61,10 @@ form input, textarea {
   border: 1px solid;
 }
 
+
+
 .bottomLeft {
-  /* background-color: red; */
+  background-color: red;
   max-width: 1000px;
   margin: auto !important;
 }
@@ -80,7 +90,7 @@ form input, textarea {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 
     .hide {
       display: none;
