@@ -21,72 +21,72 @@ const Portfolio = () => {
 
   // Function to dynamically resolve image paths
   const getImagePath = (imageName) =>
-    new URL(`../assets/images/projectsScreenshot/${imageName}`, import.meta.url).href;
+    new URL(`../assets/images/projectsScreenshot/${imageName}`, import.meta.url)
+      .href;
 
   return (
     <section className="blackWrapper">
       <Header className="blackHeader" />
 
       <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.2 }} // Ensures it animates once per scroll
-              variants={pageVariants}
-              className="motionWrapper"
-            >
-      <div className="contentContainer padding portfolioPage">
-        <div className="session">
-          <article>
-            <h3 className="pageTitle">Portfolio</h3>
-            <p>
-              Explore our portfolio to see the quality and creativity behind our
-              previous projects!
-            </p>
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }} // Ensures it animates once per scroll
+        variants={pageVariants}
+        className="motionWrapper"
+      >
+        <div className="contentContainer padding portfolioPage">
+          <div className="session">
+            <article>
+              <h3 className="pageTitle">Portfolio</h3>
+              <p>
+                Explore our portfolio to see the quality and creativity behind
+                our previous projects!
+              </p>
 
-            {/* Services Section */}
-            <div className="portfolioContainer">
-              {projectList.map((project, index) => (
-                <a href={project.projectLink} target="_blank" key={index}>
+              {/* Services Section */}
+              <div className="portfolioContainer">
+                {projectList.map((project, index) => (
                   <motion.div
-                                      className="intro"
-                                      initial={{ opacity: 0 }}
-                                      whileInView={{ opacity: 1 }}
-                                      transition={{ duration: 1.5, ease: "easeOut" }}
-                                      viewport={{ once: true, amount: 0.1 }} // Ensures it only animates once when 20% of it is in view
-                                    >
-                  <div className="projectCard">
-                    {/* Use the project image class (or a placeholder if no image is provided) */}
+                      className="intro"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      transition={{ duration: 1.5, ease: "easeOut" }}
+                      viewport={{ once: true, amount: 0.1 }} // Ensures it only animates once when 20% of it is in view
+                    >
+                  <a href={project.projectLink} target="_blank" key={index}>
+                      <div className="projectCard">
+                        {/* Use the project image class (or a placeholder if no image is provided) */}
 
-                    <img
-                      src={getImagePath(project.imageSrc)} // Replace with dynamic image path if needed
-                      alt={project.projectTitle}
-                      className={`portfolioPageImg ${project.className}`}
-                    />
+                        <img
+                          src={getImagePath(project.imageSrc)} // Replace with dynamic image path if needed
+                          alt={project.projectTitle}
+                          className={`portfolioPageImg ${project.className}`}
+                        />
 
-                    <div className="titleContainer">
-                      <h2>{project.projectTitle}</h2>
-                      {/* <p>{project.projectDescription}</p> */}
+                        <div className="titleContainer">
+                          <h2>{project.projectTitle}</h2>
+                          {/* <p>{project.projectDescription}</p> */}
+                        </div>
                       </div>
-                    
-                  </div>
-                  </motion.div>
-                </a>
-              ))}
-            </div>
-          </article>
+                  </a>
+                    </motion.div>
+                ))}
+              </div>
+            </article>
 
-          {/* Contact Button */}
-          <div className="buttonContainer">
-            <button
-              onClick={() => navigate("/contact-us")}
-              className="regularButton"
-              style={{ margin: "100px" }}
-            >
-              Contact Us
-            </button>
+            {/* Contact Button */}
+            <div className="buttonContainer">
+              <button
+                onClick={() => navigate("/contact-us")}
+                className="regularButton"
+                style={{ margin: "100px" }}
+              >
+                Contact Us
+              </button>
+            </div>
           </div>
         </div>
-      </div>
       </motion.div>
     </section>
   );
