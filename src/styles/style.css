@@ -118,6 +118,7 @@
 
     .whiteBg {
         background-color: white;
+        /* background-color: rgb(235, 208, 8); */
     }
 
     .whiteBg * {
