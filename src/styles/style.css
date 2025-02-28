@@ -297,7 +297,7 @@
 
     .regularButton {
         background-color: transparent;
-        border: solid #10aeb3 1px;
+        border: solid #FFFE54 1px;
         border-radius: 5px;
         padding: 12px;
         width: 30%;
@@ -309,7 +309,7 @@
     }
 
     .regularButton:hover {
-        background-color:#FED639;
+        background-color: #FFFE54;
         transition: .3s;
         color: white;
       }
@@ -517,7 +517,7 @@ nav a {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    color: black;
+    color: rgb(158, 73, 73);
     text-align: center;
     /* background-color: purple; */
     justify-content: space-around;
@@ -1304,7 +1304,8 @@ article h1 {
   }
 
   .highlighted {
-    background-color: #FED639;
+    background-color: #FFFE54;
+    color: black;
     width: auto;
     margin: auto;
   }

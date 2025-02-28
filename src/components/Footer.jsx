@@ -9,15 +9,16 @@ import blackLogo from "../assets/images/logo_black.svg";
 import blueLogo from "../assets/images/logo_blue.svg";
 import FacebookIcon from "../assets/images/icons/facebook";
 import InstagramIcon from "../assets/images/icons/instagram";
+import footerLogo from "../assets/images/footerLogo.svg";
 
-const Footer = () => {
+function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <div className="footer">
       {/* flex side by side */}
       {/* section1 */}
-      
+
 
       <div className="socialMediaIconContainer"></div>
 
@@ -25,16 +26,16 @@ const Footer = () => {
       <div className="footerContent">
         {/* div 1 */}
         {/* <div className="logoSmallScren">
-        <img src={blackLogo} alt="White Logo" />
-        </div> */}
-        
+            <img src={blackLogo} alt="White Logo" />
+            </div> */}
+
 
         <div>
           {/* <div className="logoContainer"> */}
-            <img src={blueLogo} alt="Black Logo" className="hideLogo" />
+          <img src={footerLogo} alt="Black Logo" className="hideLogo" />
           {/* </div> */}
-          
-          
+
+
           <h3>Navigation</h3>
           <ul>
             <li>
@@ -119,6 +120,6 @@ const Footer = () => {
       <p>&copy; {currentYear} Nova Digital Solutions LLC. All rights reserved.</p>
     </div>
   );
-};
+}
 
 export default Footer;
