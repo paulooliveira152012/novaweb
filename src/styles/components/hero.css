@@ -105,9 +105,9 @@
     cursor: pointer;
     color: rgb(0, 0, 0);
     font-size: 17px;
-    background: linear-gradient(90deg, #FED639, #FFEA00, #FFD700); /* Red gradient */
+    background: linear-gradient(90deg, #FFFE54, #FFEA00, #FFFE54); /* Red gradient */
     background-size: 300% 300%; /* Larger size for dynamic movement */
-    box-shadow: 0 0 10px #FED639;
+    box-shadow: 0 0 10px #FFFE54;
     animation: gradientShift 4s infinite ease-in-out; /* Smooth gradient animation */
     transition: all 0.3s ease; /* Smooth scaling effect */
     position: relative;

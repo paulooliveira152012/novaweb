@@ -48,8 +48,8 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #FED639;
-  background-color: #FED639 !important;
+  border-color: #FFFE54;
+  background-color: #FFFE54 !important;
   font-weight: 650;
 }
 button:focus,
