@@ -6,6 +6,15 @@ import emailjs from "emailjs-com";
 import Header from "../components/Header";
 import { motion } from "framer-motion";
 
+const pageVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, staggerChildren: 0.2 },
+  },
+};
+
 const ContactUs = () => {
   const [fullName, setFullName] = useState("");
   const [phone, setPhone] = useState("");
@@ -61,7 +70,13 @@ const ContactUs = () => {
       <div className="contentContainer padding">
         {/* contact wrapper should display column */}
         {/* rows to display two side sections */}
-
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={pageVariants}
+          className="motionWrapper"
+        >
         {/* top left */}
         <div className="row">
           <div className="square topLeft">
@@ -145,6 +160,7 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
+        </motion.div>
       </div>
     </section>
   );
