@@ -13,6 +13,10 @@
     background-color: black;
 }
 
+.moon {
+    opacity: 25%;
+}
+
 .stars {
     position: absolute;
     width: 100%;

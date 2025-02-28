@@ -6,6 +6,7 @@ import Header from "./Header";
 import Elipse from "../assets/images/Ellipse.svg"
 // import video from "../assets/videos/heroVideo.MP4";
 import Starfield from "../components/Starfield";
+import Moon from "../assets/images/moon.png"
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -40,6 +41,9 @@ const Hero = () => {
         </h1>
         <button onClick={() => navigate("/contact-us")}>Contact us</button>
         <img src={Elipse} className="ellipse" />
+
+        {/* <img src={Moon} className="ellipse moon" /> */}
+
       </div>
     </div>
   );
