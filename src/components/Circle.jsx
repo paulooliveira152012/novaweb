@@ -24,8 +24,8 @@ const Circle = () => {
       {/* Define the Gradiant */}
       <defs>
           <linearGradient id="gradientStroke" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="white" />
-            <stop offset="100%" stopColor="#0014EB" />
+            <stop offset="0%" stopColor="#fed639" />
+            <stop offset="100%" stopColor="" />
           </linearGradient>
         </defs>
 

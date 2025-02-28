@@ -98,30 +98,41 @@ const About = () => {
 
                   {/* working here... */}
 
-                  <motion.div
-                    
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 1.5, ease: "easeOut" }}
-                    viewport={{ once: true, amount: 0.1 }} // Ensures it only animates once when 20% of it is in view
-                  >
                   <article className="aboutTeam">
-                    <h3>OUR TEAM</h3>
-                    {/* flex container */}
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      transition={{ duration: 1.5, ease: "easeOut" }}
+                      viewport={{ once: true, amount: 0.1 }} // Ensures it only animates once when 20% of it is in view
+                    >
+                      <h3>OUR TEAM</h3>
+                      {/* flex container */}
+                    </motion.div>
 
                     <div className="flex">
                       {/* block container developer */}
                       <div>
                         {/* image div */}
-                        <div className="imgContainer">
+                        <motion.div
+                          initial={{ opacity: 0 }}
+                          whileInView={{ opacity: 1 }}
+                          transition={{ duration: 1.5, ease: "easeOut" }}
+                          viewport={{ once: true, amount: 0.1 }} // Ensures it only animates once when 20% of it is in view
+                          className="imgContainer"
+                        >
                           <img src={developer}></img>
-                        </div>
+                        </motion.div>
                         {/* whriting div */}
                         <div>
-                          <div>
+                          <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 1.5, ease: "easeOut" }}
+                            viewport={{ once: true, amount: 0.1 }} // Ensures it only animates once when 20% of it is in view
+                          >
                             <h3>Paulo</h3>
                             <span>Founder, developer and Idealist</span>
-                          </div>
+                          </motion.div>
                           <p>
                             With a forward-thinking vision, Paulo blends his
                             skills as a developer with a passion for
@@ -135,9 +146,15 @@ const About = () => {
                       {/* block container design team*/}
                       <div>
                         {/* image div */}
-                        <div className="imgContainer">
+                        <motion.div
+                          initial={{ opacity: 0 }}
+                          whileInView={{ opacity: 1 }}
+                          transition={{ duration: 1.5, ease: "easeOut" }}
+                          viewport={{ once: true, amount: 0.1 }} // Ensures it only animates once when 20% of it is in view
+                          className="imgContainer"
+                        >
                           <img src={design}></img>
-                        </div>
+                        </motion.div>
                         {/* written div */}
                         {/* <div>
                     <div className="flex">
@@ -152,7 +169,12 @@ const About = () => {
                       functionality.
                     </p>
                   </div> */}
-                        <div>
+                        <motion.div
+                          initial={{ opacity: 0 }}
+                          whileInView={{ opacity: 1 }}
+                          transition={{ duration: 1.5, ease: "easeOut" }}
+                          viewport={{ once: true, amount: 0.1 }} // Ensures it only animates once when 20% of it is in view
+                        >
                           <div>
                             <h3>Design Team</h3>
                             <span>Creative, Functional, Impactful</span>
@@ -164,11 +186,10 @@ const About = () => {
                             the pursuit of solutions that merge beauty and
                             functionality.
                           </p>
-                        </div>
+                        </motion.div>
                       </div>
                     </div>
                   </article>
-                  </motion.div>
                 </div>
                 {/* end of white */}
 
