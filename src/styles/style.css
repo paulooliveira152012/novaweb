@@ -308,7 +308,7 @@
     }
 
     .regularButton:hover {
-        background-color: #10aeb3;
+        background-color:#FED639;
         transition: .3s;
         color: white;
       }
@@ -1303,7 +1303,7 @@ article h1 {
   }
 
   .highlighted {
-    background-color: #1C2AC9;
+    background-color: #FED639;
     width: auto;
     margin: auto;
   }

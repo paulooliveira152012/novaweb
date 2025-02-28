@@ -103,11 +103,11 @@
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    color: white;
-    font-size: 16px;
-    background: linear-gradient(90deg, #0ce3eb, #1322c9, #00d9ff); /* Red gradient */
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    background: linear-gradient(90deg, #FED639, #FFEA00, #FFD700); /* Red gradient */
     background-size: 300% 300%; /* Larger size for dynamic movement */
-    box-shadow: 0 0 10px #0ce3eb;
+    box-shadow: 0 0 10px #FED639;
     animation: gradientShift 4s infinite ease-in-out; /* Smooth gradient animation */
     transition: all 0.3s ease; /* Smooth scaling effect */
     position: relative;

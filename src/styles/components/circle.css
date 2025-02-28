@@ -10,6 +10,7 @@
     /* background-color: red; */
     display: flex;
     flex-direction: column;
+
 }
 
 .circle-svg {
@@ -26,7 +27,8 @@
 .circle-text {
     /* position: absolute; */
     text-align: center;
-    font-size: 150%;
+    font-size: 180%;
+    font-family: Manrope !important;
     /* font-weight: bold; */
     /* color: white;  */
 }
