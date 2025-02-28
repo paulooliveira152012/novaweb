@@ -3,13 +3,15 @@ import { useNavigate, useLocation } from "react-router-dom";
 import Header from "../components/Header";
 import "../styles/style.css";
 import "../styles/services.css";
+import "../styles/fonts.css";
 import { Link } from "react-router-dom";
 
 // Import images
-const websitesImg = new URL("../assets/images/services/webDesign.jpg", import.meta.url).href;
-const socialMediaImg = new URL("../assets/images/services/socialMedia.jpg", import.meta.url).href;
+// const websitesImg = new URL("../assets/images/services/webDesign.jpg", import.meta.url).href;
+const websitesImg = new URL("../assets/images/services/WebDesign.png", import.meta.url).href;
+const socialMediaImg = new URL("../assets/images/services/SocialMedia.png", import.meta.url).href;
 const landingPagesImg = new URL("../assets/images/services/landingPages.jpg", import.meta.url).href;
-const ecommercesImg = new URL("../assets/images/services/ecommerces.jpg", import.meta.url).href;
+const ecommercesImg = new URL("../assets/images/services/ECommerce.png", import.meta.url).href;
 
 const OurServices = () => {
   const navigate = useNavigate();
@@ -19,28 +21,22 @@ const OurServices = () => {
     {
       name: "Websites",
       description:
-        "We create stunning, high-performance websites tailored to your business needs. From corporate sites to personal portfolios, we focus on responsive design and user experience to enhance your online presence.",
+        "Nova offers tailored digital solutions for small and medium-sized businesses, focusing on creative, functional, and high-quality strategies. We specialize in website and landing page development, creating attractive, user-friendly designs that engage your audience and drive results. Let’s build something amazing together!",
       image: websitesImg,
       id: "Websites",
     },
     {
       name: "Social Media",
       description:
-        "Our social media services include content creation, branding strategies, and engagement techniques to help you grow your online audience and build a strong brand presence.",
+        "We turn ideas into reality with tailored digital solutions for small and medium businesses. Specializing in website development, landing pages, and social media management, we create engaging, high-quality designs to help your brand thrive online.",
       image: socialMediaImg,
       id: "Social Media",
     },
+    
     {
-      name: "Landing Pages",
+      name: "E-commerce Solutions",
       description:
-        "We design conversion-focused landing pages optimized for marketing campaigns, lead generation, and promotions. Our approach ensures seamless integration with your advertising strategy.",
-      image: landingPagesImg,
-      id: "Landing Pages",
-    },
-    {
-      name: "E-Commerces",
-      description:
-        "We develop high-quality e-commerce websites that provide seamless shopping experiences. Whether you're selling physical or digital products, we build secure and scalable online stores tailored to your needs.",
+        "We empower businesses with customized e-commerce solutions that enhance online sales and customer engagement. Our services are designed to create seamless, secure, and high-performing online stores, helping your business grow in the digital marketplace with efficiency and innovation.",
       image: ecommercesImg,
       id: "E-Commerces",
     },
@@ -59,14 +55,14 @@ const OurServices = () => {
   }, [location]);
 
   return (
-    <section>
+    <section className="blackWrapper ourServicesPage">
       <Header className="blackHeader" />
       <div className="contentContainer">
         <div className="session padding">
           <article>
-            <h2 className="pageTitle">Services</h2>
+            <h3 className="pageTitle">Services</h3>
             <p>
-              At Nova, we transform ideas into reality by offering tailored digital solutions for small and medium-sized businesses. Our services are designed to help your business thrive in the digital world with creative, functional, and high-quality strategies.
+            Creative and strategic digital solutions designed to make your business stand out. From websites to branding, every service is tailored to your needs.
             </p>
 
             {/* Services Section */}
@@ -74,7 +70,7 @@ const OurServices = () => {
               {services.map((service, index) => (
                 <div key={index} id={service.id} className="serviceCard">
                   <div>
-                    <h2>{service.name}</h2>
+                    <h3>{service.name}</h3>
                     <p>{service.description}</p>
                   </div>
                   <div>
@@ -85,14 +81,27 @@ const OurServices = () => {
             </div>
           </article>
 
+          <session>
+          <h2>
+            Boost your visibility and results
+          </h2>
+          <p>
+          We focus on maximizing results and visibility by improving Google rankings through advanced SEO strategies. Our goal is to establish a powerful online presence that attracts more traffic, enhances engagement, and drives sustainable business growth.
+          </p>
+
+          <button onClick={() => navigate("/portfolio")} className="regularButton">
+              See our work
+            </button>
+
+          </session>
+
           {/* Contact Button */}
           <div className="buttonContainer">
+            <h2>GET IN TOUCH.</h2>
             <button onClick={() => navigate("/contact-us")} className="regularButton">
               Contact Us
             </button>
-            <button onClick={() => navigate("/portfolio")} className="regularButton">
-              See our work
-            </button>
+            
           </div>
         </div>
       </div>
