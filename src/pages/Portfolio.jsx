@@ -37,7 +37,7 @@ const Portfolio = () => {
       <div className="contentContainer padding portfolioPage">
         <div className="session">
           <article>
-            <h2 className="pageTitle">Portfolio</h2>
+            <h3 className="pageTitle">Portfolio</h3>
             <p>
               Explore our portfolio to see the quality and creativity behind our
               previous projects!
