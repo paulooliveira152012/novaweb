@@ -311,7 +311,7 @@
     .regularButton:hover {
         background-color: #FFFE54;
         transition: .3s;
-        color: white;
+        color: black;
       }
 
     /*  */
