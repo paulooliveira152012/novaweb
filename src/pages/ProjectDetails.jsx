@@ -35,9 +35,24 @@ const ProjectDetails = () => {
             <p>{project.projectDescription}</p>
 
             {/* Visit Project Button */}
+            
+            {/* <button>
             <a href={project.projectLink} target="_blank" rel="noopener noreferrer" className="regularButton">
               Visit Project
             </a>
+            </button> */}
+
+            <button className="regularButton">
+            <a href={project.projectLink} target="_blank" rel="noopener noreferrer" style={{ color: "black" }}>
+              Visit Project
+            </a>
+            </button>
+
+            {/* <button>
+            <a href={project.projectLink} target="_blank" rel="noopener noreferrer">
+              Visit Project
+            </a>
+            </button> */}
 
 
           </article>

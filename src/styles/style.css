@@ -73,15 +73,17 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s ease, transform 0.3s ease;
     z-index: 1000;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
   
   .scrollToTopButton:hover {
-    background-color: #555;
     transform: scale(1.1);
+    color: black;
   }
   
   .scrollToTopButton:active {
     transform: scale(0.9);
+    
   }
   
   * {

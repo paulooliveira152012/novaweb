@@ -48,6 +48,18 @@
   transition: opacity 0.3s ease-in-out;
 }
 
+.portfolioPage p {
+  margin: 20px 0;
+}
+
+/* 
+<button>
+            <a href={project.projectLink} target="_blank" rel="noopener noreferrer">
+              Visit Project
+            </a>
+            </button>
+*/
+
 /* Project Images */
 .portfolioPageImg {
   width: 100%;
