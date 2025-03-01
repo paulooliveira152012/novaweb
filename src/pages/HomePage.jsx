@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import Circle from "../components/circle";
+import Circle from "../components/Circle";
 import Services from "../components/Services";
 import ListOfServices from "../components/ListOfServices";
 import { motion } from "framer-motion";
