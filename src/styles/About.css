@@ -270,3 +270,15 @@ text-align: left;
         left: 100%; /* End completely off-screen */
     }
 }
+
+
+@media screen and (max-width: 500px) {
+    .aboutButtonContainer {
+        /* background-color: blue; */
+        width: 60%;
+    }
+
+    .aboutButtonContainer button {
+        width: 100%;
+    }
+}

@@ -151,22 +151,10 @@
 }
 
 @media screen and (max-width: 500px) {
-    .hero {
-        /* min-height: 100vh; */
-        /* background-color: red; */
+    
+    .heroContent button {
+        width: 50%;
     }
-
-    .heroContent {
-        /* background-color: rgba(0, 0, 0, 0.825); */
-        /* width: 90%;
-        height: 200px;
-        right: auto;
-        bottom: 10px;
-        border-radius: 20px; */
-        /* text-shadow: 1px 2px 17px black; */
-    }
-
-
 }
 
 @media screen and (max-width: 700px) {

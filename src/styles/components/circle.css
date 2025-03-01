@@ -49,3 +49,13 @@
         font-size: 150%;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .circleComponent {
+        width: 100%;
+    }
+
+    .circle-TextContainer h2 {
+        font-size: 24px;
+    }
+}

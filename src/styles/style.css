@@ -636,6 +636,17 @@ nav a {
         width: 90%;
         text-align: justify;
     }
+
+    .ListOfServicesContainer h2 {
+        /* background-color: red; */
+        font-size: 60px !important;
+
+    }
+
+    .regularButton {
+        /* background-color: red; */
+        width: 50%;
+    }
 }
 
 .intro h3 {
@@ -1297,6 +1308,8 @@ article h1 {
     text-align: center;
     align-items: center;
   }
+
+
 
   .ListOfServicesContainer a {
     /* background-color: red; */
