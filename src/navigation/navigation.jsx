@@ -13,8 +13,7 @@ import Calendar from "../pages/Calendar.jsx";
 import Footer from "../components/Footer.jsx";
 import ScrollToTop from "../helper/ScrollToTop.jsx";
 import "../styles/style.css";
-
-import "../styles/fonts.css"
+import "../styles/Fonts.css"
 
 
 
