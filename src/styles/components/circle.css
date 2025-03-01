@@ -1,0 +1,51 @@
+.circleComponent {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.circle-svg {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+}
+
+.circle-TextContainer {
+    /* background-color: green; */
+    position: absolute;
+}
+
+.circle-text {
+    /* position: absolute; */
+    text-align: center;
+    font-size: 180%;
+    font-family: Manrope !important;
+    /* font-weight: bold; */
+    /* color: white;  */
+}
+
+/* min = nao aplica ate que chega (almentando) */
+@media screen and (min-width: 700px) {
+    .circle-TextContainer h2 {
+        font-size: 44px;
+        /* background-color: red; */
+        line-height: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .circle-TextContainer h2 {
+        /* background-color: blue; */
+        font-size: 40px;
+        font-size: 150%;
+    }
+}

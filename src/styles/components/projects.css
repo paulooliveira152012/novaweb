@@ -1,0 +1,106 @@
+/* projects */
+/* Specific image styles */
+
+.projectsContainer {
+    /* background-color: red; */
+    display: flex; /* Align items in a row */
+    gap: 20px; /* Add space between items */
+    padding: 10px; /* Add padding around the container */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    box-sizing: border-box; /* Include padding in width calculations */
+    box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.218);
+    margin-bottom: 20px;
+    border-radius: 0 0 30px 30px;
+    /* min-height: fit-content; */
+}
+
+
+.centeredContainer {
+    /* background-color: green; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centeredContainer form {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.projectContainerWide {
+    flex: 1 1 calc(33.33% - 20px); /* Three items per row with space in between */
+    /* background-color: black; */
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 100%; /* Set a minimum width for items */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    transition: transform 0.3s ease, z-index 0.3s ease; /* Smooth scaling */
+    transform-origin: center; /* Scale from the center */
+    display: inline-block;
+    z-index: 1;
+    transform: scale(0.8); /* Larger size for the active project */
+}
+
+.projectContainerWide:hover {
+    
+    z-index: 3; /* Bring to the front on hover */
+  }
+
+  .projectContainerWide.activeProject {
+    transform: scale(1); /* Larger size for the active project */
+    z-index: 3; /* Bring to the front */
+  }
+
+  /* Add overlay effect */
+.imageContainer {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: filter 0.3s ease;
+  }
+
+  .projectDescription {
+    font-size: 14px;
+    color: white;
+    line-height: 1.5em;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 5px 30px; */
+  }
+
+.hikari {
+    /* background-image: url('../assets/images/projects/hikari.png'); */
+    background-image: url('../assets/images/projectsScreenshot/hikari.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+
+  .cristaos {
+    background-image: url('../assets/images/projectsScreenshot/cristaos.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+
+  .acj {
+    background-image: url('../assets/images/projectsScreenshot/acj.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .whiteway {
+    background-image: url('../assets/images/projectsScreenshot/whiteway.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+

@@ -5,7 +5,7 @@ import BurgerMenu from "./BurgerMenu";
 // soon to delete after implementing stile
 import "../styles/style.css";
 import "../styles/header.css"
-import whiteLogo from '../assets/images/logo_white.svg';
+import whiteLogo from '../assets/images/logoWhite.svg';
 import blackLogo from '../assets/images/logo_black.svg';
 
 const Header = ({ className }) => {
@@ -15,7 +15,7 @@ const Header = ({ className }) => {
 
     // Determine which logo to use based on the current pathname
     const getLogo = () => {
-        return blackLogo;
+        return whiteLogo;
     };
 
     const toggleMenu = () => {

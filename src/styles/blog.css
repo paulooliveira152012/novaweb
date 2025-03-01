@@ -110,6 +110,10 @@
     align-self: center;
     text-align: center;
   }
+
+  .blogContent h3 {
+    color: black;
+  }
   
   .backButton {
     background: #333;

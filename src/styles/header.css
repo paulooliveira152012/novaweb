@@ -5,6 +5,12 @@
     color: rgb(0, 0, 0);
 }
 
+
+
+.header .blackHeader {
+    background-color: red !important;
+}
+
 .header a {
     color: black;
     text-decoration: none;
@@ -19,7 +25,7 @@
     align-items: center;
     padding: 20px 50px;
     color: white;
-    background-color: white;
+    /* background-color: white; */
     /* position: absolute; */
     top: 0;
     left: 0px; /* Match the left padding */
@@ -37,11 +43,11 @@
 
 /* BurgerMenu Styles for Light Background */
 .header.blackHeader .burgerMenuContainer .bar {
-    background-color: black; /* Black bars for light backgrounds */
+    background-color: white; /* Black bars for light backgrounds */
 }
 
 .header.blackHeader a {
-    color: black;
+    color: white;
 }
 
 .header.blackHeader .branding .title {

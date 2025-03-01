@@ -1,11 +1,30 @@
 
 .ourServicesPage {
-  background-color: red;
+  /* background-color: red; */
 }
 
 
 .ourServicesPage .serviceCard {
   text-align: left;
+  border-top: 0.1px solid rgb(156, 156, 156);
+  padding-bottom: 20px;
+  display: flex;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+
+
+.serviceCard li  {
+  /* background-color: red; */
+  list-style: disc;
 }
 
 .ourServicesPage .serviceCard p {
@@ -21,16 +40,6 @@
     margin-top: 20px;
   }
   
-  /* Service Card Styling */
-  .serviceCard {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left;
-    display: flex;
-  }
   
   .serviceCard:hover {
     transform: translateY(-5px);
@@ -48,7 +57,7 @@
     /* background-color: red; */
     text-align: justify;
     box-sizing: border-box;
-    padding: 10px;
+    /* padding: 10px; */
   }
 
   .serviceCard > :last-child {
@@ -86,11 +95,24 @@
     text-align: left;
     margin: 10px 20px;
   }
+
+  .buttonContainer {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .buttonContainer button {
+    /* margin: 0; */
+  }
   
   /* Contact Button */
   .contactButtonContainer {
     text-align: center;
     margin-top: 30px;
+
   }
 
  

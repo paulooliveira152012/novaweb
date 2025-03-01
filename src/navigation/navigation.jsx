@@ -8,10 +8,13 @@ import ContactUs from "../pages/ContactUs.jsx";
 import AccessibilityStatement from "../pages/AccessibilityStatement.jsx";
 import PrivacyPolicy from "../pages/PrivacyPolicy.jsx";
 import Portfolio from "../pages/Portfolio.jsx";
+import ProjectDetails from "../pages/ProjectDetails.jsx";
 import Calendar from "../pages/Calendar.jsx";
 import Footer from "../components/Footer.jsx";
 import ScrollToTop from "../helper/ScrollToTop.jsx";
 import "../styles/style.css";
+
+import "../styles/fonts.css"
 
 
 
@@ -58,6 +61,7 @@ const ContentWithFooter = () => {
                     <Route path="/our-services" element={<OurServices />} />
                     <Route path="/blogs/:blogName?" element={<Blogs />} />
                     <Route path="/portfolio" element={<Portfolio/>} />
+                    <Route path="/project/:id" element={<ProjectDetails/>} />
                     <Route path="/contact-us" element={<ContactUs />} />
                     <Route path="/accessibility-statement" element={<AccessibilityStatement />} />
                     <Route path="/privacy-policy" element={<PrivacyPolicy />} />

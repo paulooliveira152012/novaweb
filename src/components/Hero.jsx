@@ -1,9 +1,12 @@
 import "../styles/style.css";
-import "../styles/hero.css";
+import "../styles/components/hero.css";
 import { useNavigate } from "react-router-dom";
-import heroImg from "../assets/images/heronovaimage.jpg"
+import heroImg from "../assets/images/heronovaimage.jpg";
 import Header from "./Header";
+import Elipse from "../assets/images/Ellipse.svg"
 // import video from "../assets/videos/heroVideo.MP4";
+import Starfield from "../components/Starfield";
+import Moon from "../assets/images/moon.png"
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -11,11 +14,11 @@ const Hero = () => {
     // <div className="hero" role="banner" aria-labelledby="motor picture">
     //   <div className="darkHeroOverlay" aria-hidden="true"></div>
     //   <div className="heroContent">
-    //     <video 
-    //       autoPlay 
-    //       loop 
-    //       muted 
-    //       playsinline 
+    //     <video
+    //       autoPlay
+    //       loop
+    //       muted
+    //       playsinline
     //       class="backgroundVideo"
     //       aria-hidden="true"
     //       >
@@ -25,20 +28,24 @@ const Hero = () => {
     //   </div>
     // </div>
 
-
     <div className="hero" role="banner" aria-labelledby="motor picture">
-  <Header className="blackHeader transparent"/>
-   <img className="heroImg" src={heroImg} />
+      <Header className="blackHeader transparent" />
+      {/* <div className="stars"></div>  */}
+      <Starfield />
+      <img className="heroImg" />
       <div className="darkHeroOverlay" aria-hidden="true"></div>
       <div className="heroContent">
-         <h1>
+        <h1>
           Your vision, <br />
           our inovation
         </h1>
         <button onClick={() => navigate("/contact-us")}>Contact us</button>
+        <img src={Elipse} className="ellipse" />
+
+        {/* <img src={Moon} className="ellipse moon" /> */}
+
       </div>
     </div>
-
   );
 };
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import projectsList from "../projects/projects.json";
-import "../styles/projects.css";
+import "../styles/components/projects.css";
 
 const ProjectsCarousel = () => {
   const containerRef = useRef(null);

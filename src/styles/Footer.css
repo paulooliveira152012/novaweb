@@ -6,23 +6,47 @@
     color: white;
     position: relative;
     bottom: 0;
-    /* background-color: #313131; */
-    background-color: #F0EEEE;
+    background-color: white;
     padding: 60px 20px;
     box-sizing: border-box;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-size: 13px;
 }
 
+.footerLogoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.footer img {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    margin-bottom: 20px;
+}
+
+.footerContentWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
 .footerContent {
-    /* background-color: green; */
     display: flex;
     width: 100%;
     height: 100%;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 50px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    max-width: 1200px;
 }
 
 .footer * {
@@ -30,10 +54,9 @@
 }
 
 .footer .socialMediaIconContainer {
-    /* background-color: red; */
     width: 15%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 /* Attention */
@@ -45,27 +68,26 @@
 .footerContent div {
     width: auto;
     min-height: 150px;
-    /* background-color: blue; */
-    /* margin: 20px; */
+    flex: 1;
+    margin: 10px;
 }
 
 .footerContent div ul {
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
 }
 
 .footerContent div ul li {
-    margin-top: 18px;
+    margin-top: 5px;
     display: flex;
     align-items: center;
 }
 
 .footerContent a {
+    font-size: 15px !important;
     margin: 0;
     padding: 0;
-    /* background-color: red; */
     display: flex;
     align-items: center;
 }
@@ -78,17 +100,16 @@
 }
 
 .footer h3 {
-    font-size: 13px;
-    color: #0014EB;
+    font-size: 17px !important;
+    margin-top: 30px;
+    color: #000000;
+    font-family: Manrope !important;
 }
-
 
 .footer .section div {
     width: 100%;
     margin: 10px;
 }
-
-
 
 .footer span {
     font-weight: bold;
@@ -100,92 +121,75 @@
 }
 
 .footer .content {
-    /* background-color: purple; */
     display: flex;
     flex-direction: column;
-    flex: 2
+    flex: 2;
 }
 
 .footer .flex {
     display: flex;
-    /* background-color: red; */
     margin-bottom: 60px;
-}
-
-.footer .logoContainer {
-    /* flex: 1; */
-    /* width: 100%; */
-    height: auto;
-    /* background-color: red; */
-    /* display: flex; */
-    justify-content: left;
-    /* align-items: center; */
-    margin: 20px;
-    /* padding-left: 50px; */
-}
-
-.footer  img {
-    position: absolute;
-    top: 20px;
-}
-
-.logoSmallScren {
+    justify-content: space-between;
     width: 100%;
-    /* background-color: red; */
-    height: 20px;
+    flex-wrap: wrap;
 }
-
-
 
 @media screen and (max-width: 600px) {
     .footer {
-        height: 100%;
+        height: auto;
+    }
+
+    .footerLogoContainer {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .footerContentWrapper {
+        align-items: flex-start;
+        text-align: left;
+        width: 100%;
     }
 
     .footerContent {
-        /* background-color: red; */
         flex-direction: column;
-        align-items: center;
-        /* justify-content: center; */
-        text-align: center;
-        margin-top: 0;
+        align-items: flex-start;
+        text-align: left;
+        margin-top: 10px;
     }
 
     .footerContent ul {
-        align-items: center;
+        align-items: flex-start;
     }
 
     .footer .socialMediaIconContainer {
-        /* background-color: purple; */
-        width: 30% !important; 
+        width: 40% !important;
         display: flex;
-        justify-content: space-around;
-        margin: 20px 0;        
+        justify-content: flex-start;
+        margin: 20px 0;
     }
 
-    .footer .socialMediaIconContainer  {
-        /* background-color: green; */
-        scale: 1.5;
-        /* fill: black */
+    .footer .socialMediaIconContainer {
+        scale: 1.2;
     }
 
     .footer .hideLogo {
-        margin-bottom: 50px;
-        /* margin: auto; */
+        margin-bottom: 20px;
     }
 
-    .logoSmallScren {
-        display: block;
+    .footer .flex {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .footer  img {
-        position:static;
-        /* top: 0px; */
+    .footer img {
+        width: 220px;
+        height: auto;
+        position: static;
         align-self: center;
-        margin: auto;
+        margin: 10px 0;
     }
 
     .socialMediaContainer {
-        margin-top: 50px;
+        margin-top: 20px;
     }
 }

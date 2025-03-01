@@ -1,0 +1,89 @@
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.servicesContainer {
+    padding: 80px 0;
+}
+
+.servicesContainer .servicesTitle {
+    text-align: left;
+    padding: 0 50px;
+    font-family: 'Neue Haas Display';
+    font-style: italic;
+}
+
+.ServicesWrapper {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    padding: 20px 0;
+}
+
+.ServicesWrapper > div:first-child {
+    flex: 1;
+    height: 100%;
+}
+
+.ServicesWrapper div {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.ServicesWrapper > :first-child {
+ /* background-color: red;    */
+}
+
+.ServicesWrapper ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.ServicesWrapper ul li {
+    cursor: pointer;
+}
+
+.selected {
+    color: #1322c9 !important;
+}
+
+.ServicesWrapper > div:last-child {
+    flex: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    /* margin: 20px; */
+    justify-content: center;
+    /* border: 2px solid lightgray; */
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+/* Animation applied dynamically */
+.animated {
+    animation: slideInFromRight 1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.serviceDefinition {
+    /* text-align: justify; */
+    /* background-color: red; */
+    /* line-height: 2em; */
+}
+
+@media screen and (max-width: 768) {
+    .selected {
+        color: red !important;
+        background-color: #1322c9 !important;
+    }
+}
