@@ -37,7 +37,7 @@ const Hero = () => {
       <div className="heroContent">
         <h1>
           Your vision, <br />
-          our inovation
+          our innovation
         </h1>
         <button onClick={() => navigate("/contact-us")}>Contact us</button>
         <img src={Elipse} className="ellipse" />

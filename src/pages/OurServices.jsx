@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import Header from "../components/Header";
 import "../styles/style.css";
 import "../styles/services.css";
-import "../styles/fonts.css";
+import "../styles/Fonts.css";
 import { Link } from "react-router-dom";
 // import motion
 import { motion } from "framer-motion";
@@ -28,10 +28,7 @@ const socialMediaImg = new URL(
   "../assets/images/services/SocialMedia.png",
   import.meta.url
 ).href;
-const landingPagesImg = new URL(
-  "../assets/images/services/landingPages.jpg",
-  import.meta.url
-).href;
+
 const ecommercesImg = new URL(
   "../assets/images/services/ECommerce.png",
   import.meta.url
