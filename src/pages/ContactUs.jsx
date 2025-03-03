@@ -1,7 +1,7 @@
 import "../styles/style.css";
 import "../styles/ContactUs.css";
 import Footer from "../components/Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 import Header from "../components/Header";
 import { motion } from "framer-motion";
@@ -15,12 +15,26 @@ const pageVariants = {
   },
 };
 
+// Environment variables
+const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+
 const ContactUs = () => {
   const [fullName, setFullName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [caseContent, setCaseContent] = useState("");
   const [businessName, setBusinessName] = useState("");
+
+  useEffect(() => {
+
+    // Debug log for environment variables
+    console.log("✅ Service ID:", serviceID);
+    console.log("✅✅ Template ID:", templateID);
+    console.log("✅✅✅ Public Key:", publicKey);
+    })
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -36,15 +50,7 @@ const ContactUs = () => {
     };
 
     try {
-      // Environment variables
-      const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-      const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
-      // Debug log for environment variables
-      console.log("Service ID:", serviceID);
-      console.log("Template ID:", templateID);
-      console.log("Public Key:", publicKey);
+      
 
       // Send email
       await emailjs.send(serviceID, templateID, formData, publicKey);
