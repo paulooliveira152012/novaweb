@@ -1,22 +1,23 @@
 import React from "react";
 import "../styles/style.css";
 import Header from "../components/Header";
+import "../styles/privacyPolicy.css";
 
 const PrivacyPolicy = () => {
     return (
-        <div className="contentContainer" style={{ paddingTop: "0" }}> 
+        <div className="contentContainer StatementPage" style={{ paddingTop: "0" }}> 
             <Header className={"blackHeader"}/>
             <div className="session">
             <h1>Privacy Policy</h1>
             <p>
-                At <strong>ACJ Auto Repair</strong>, we are committed to protecting the privacy of our customers and website visitors. This Privacy Policy outlines how we collect, use, and safeguard your information when you interact with our services, whether online or in-person.
+                At <strong>Nova Digital Solutions</strong>, we are committed to protecting the privacy of our customers and website visitors. This Privacy Policy outlines how we collect, use, and safeguard your information when you interact with our services, whether online or in person.
             </p>
 
             <h2>1. Information We Collect</h2>
             <p>We may collect the following types of information from you:</p>
             <ul>
                 <li>
-                    <strong>Personal Information:</strong> Name, email address, phone number, and vehicle details, provided when scheduling an appointment, contacting us, or signing up for services.
+                    <strong>Personal Information:</strong> Name, email address, phone number, and business details, provided when inquiring about our services, signing up for a consultation, or contacting us.
                 </li>
                 <li>
                     <strong>Usage Information:</strong> Information about your interaction with our website, including pages visited, time spent on the site, and browser details.
@@ -29,9 +30,9 @@ const PrivacyPolicy = () => {
             <h2>2. How We Use Your Information</h2>
             <p>Your information is used to:</p>
             <ul>
-                <li>Provide and improve our services, including scheduling and reminders.</li>
+                <li>Provide and improve our services, including website development and consultations.</li>
                 <li>Respond to your inquiries and communicate effectively.</li>
-                <li>Send updates, promotions, or service reminders, if you have opted in.</li>
+                <li>Send updates, promotions, or service-related information, if you have opted in.</li>
                 <li>Analyze website usage to enhance user experience.</li>
             </ul>
 
@@ -74,9 +75,9 @@ const PrivacyPolicy = () => {
                 If you have any questions or concerns about this Privacy Policy or our data practices, please contact us:
             </p>
             <ul>
-                <li>Phone: (908) 527-9734</li>
-                <li>Email: <a href="mailto:acjautoshop@gmail.com" style={{color: "blue"}}>acjautoshop@gmail.com</a></li>
-                <li>Address: 570 Maple Ave, Elizabeth, NJ 07202</li>
+                <li>Phone: (Your company phone number)</li>
+                <li className="email">Email: <a href="mailto:contact@novadigitalsolutions.com" className="email" style={{color: "blue"}}>contact@novadigitalsolutions.com</a></li>
+                <li>Address: (Your business address)</li>
             </ul>
 
             <p>

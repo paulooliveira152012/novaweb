@@ -1,0 +1,11 @@
+.StatementPage {
+    
+}
+
+.StatementPage li {
+    color: rgb(151, 149, 149) !important;   
+}
+
+.StatementPage .email {
+    color: yellow !important;
+}
