@@ -62,6 +62,10 @@
     /* background-color: red; */
 }
 
+.heroContent div {
+    text-align: center;
+}
+
 .hero .ellipse {
     position: absolute;
     width: 100vw;

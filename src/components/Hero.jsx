@@ -1,44 +1,54 @@
 import "../styles/style.css";
 import "../styles/components/hero.css";
 import { useNavigate } from "react-router-dom";
-import heroImg from "../assets/images/heronovaimage.jpg";
+import { useState, useEffect } from "react";
 import Header from "./Header";
-import Elipse from "../assets/images/Ellipse.svg";
-// import video from "../assets/videos/heroVideo.MP4";
 import Starfield from "../components/Starfield";
-import Moon from "../assets/images/moon.png";
+import Elipse from "../assets/images/Ellipse.svg";
+import { motion, AnimatePresence } from "framer-motion";
+
+const expertise = [
+  { title: "WEBSITES" },
+  { title: "SOCIAL MEDIA" },
+  { title: "E-COMMERCE" },
+  { title: "LANDING PAGES" }
+];
 
 const Hero = () => {
   const navigate = useNavigate();
-  return (
-    // <div className="hero" role="banner" aria-labelledby="motor picture">
-    //   <div className="darkHeroOverlay" aria-hidden="true"></div>
-    //   <div className="heroContent">
-    //     <video
-    //       autoPlay
-    //       loop
-    //       muted
-    //       playsinline
-    //       class="backgroundVideo"
-    //       aria-hidden="true"
-    //       >
-    //       <source src={video} type="video/mp4" />
-    //       Your browser does not support the video tag.
-    //     </video>
-    //   </div>
-    // </div>
+  const [currentExpertise, setCurrentExpertise] = useState(0);
 
+  // Change expertise every 6 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentExpertise((prevIndex) => (prevIndex + 1) % expertise.length);
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
     <div className="hero" role="banner" aria-labelledby="motor picture">
       <Header className="blackHeader transparent" />
-      {/* <div className="stars"></div>  */}
       <Starfield />
       <img className="heroImg" />
-      {/* <div className="darkHeroOverlay" aria-hidden="true"></div> */}
+      
       <div className="heroContent">
-        <h1>
-          Your vision, <br />
-          our innovation
-        </h1>
+        {/* Dynamically Display Changing Expertise */}
+        <div>
+          <AnimatePresence mode="wait">
+            <motion.h1
+              key={currentExpertise}
+              initial={{ opacity: 0, x: 150 }}
+              animate={{ opacity: 1, x: -150 }}
+              transition={{ duration: 2, ease: "easeOut" }}
+            >
+              {expertise[currentExpertise].title}
+            </motion.h1>
+          </AnimatePresence>
+          <p>We transform your ideas into innovative digital solutions to elevate your business online.</p>
+        </div>
+
         <button
           onClick={() => {
             console.log("Button Clicked!");
@@ -50,13 +60,9 @@ const Hero = () => {
         </button>
 
         <img src={Elipse} className="ellipse" />
-
-        {/* <img src={Moon} className="ellipse moon" /> */}
       </div>
     </div>
   );
 };
 
 export default Hero;
-
-// <p>Creative and technological solutions to strengthen your online presence</p>
