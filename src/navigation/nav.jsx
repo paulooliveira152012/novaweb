@@ -35,7 +35,7 @@ const NavBar = ({ className, handleTabClick }) => {
         <Link
           to="/"
           onClick={handleTabClick}
-          className={currentScreen === "home" ? "currentScreen" : ""}
+          className={currentScreen === "home" ? "currentScreenBlack" : ""}
         >
           Home
         </Link>

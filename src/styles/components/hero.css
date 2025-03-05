@@ -172,10 +172,3 @@
     }
 }
 
-@media screen and (max-width: 700px) {
-    
-    .hero .ellipse {
-        /* bottom: 200px; */
-        /* display: none; */
-    }
-}

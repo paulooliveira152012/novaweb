@@ -331,9 +331,12 @@
 }
 
 .currentScreenBlack {
-    /* border-top: 1px solid black;
-    border-bottom: 1px solid black; */
+    border-top: 1px solid yellow;
+    border-bottom: 1px solid yellow;
     font-weight: bold;
+    /* background-color: yellow; */
+    /* color: black !important; */
+    z-index: 20;
 }
 
 button {
@@ -538,7 +541,17 @@ nav a {
     width: auto;
     max-width: 200px;
     margin: auto;
+    border: none;
+    
 }
+
+
+.navBarInMenu .currentScreenBlack {
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
 
 /* menuBurger */
 .burgerMenuContainer {
