@@ -8,7 +8,7 @@ import ProjectsCarousel from "../components/ProjectsCarrossel";
 import ProjectsCarrosselNew from "../components/ProjectsCarrosselNew";
 import Effect from "../assets/images/effect.svg";
 import BottomEffect from "../components/BottomEfect";
-import AppointmentScheduler from "../components/AppoinmentScheduler";
+
 
 // delete if not recyclable
 // import CarTypesServices from "../components/CarTypeServices";
@@ -115,7 +115,6 @@ const Home = () => {
       {/* dedicated to your success... */}
 
       
-      <AppointmentScheduler />
 
 
       <section className="underHero">
