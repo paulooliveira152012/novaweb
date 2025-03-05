@@ -10,7 +10,8 @@
     /* display: flex; */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    background-color: black;
+    /* background-color: black; */
+    /* background-color: red; */
 }
 
 .moon {
@@ -50,7 +51,7 @@
 .heroContent {
     height: auto;
     width: 100%;
-    height: 90vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,7 +72,7 @@
     width: 100vw;
     /* height: 50vh; */
     /* background-color: red; */
-    bottom: 100px;
+    bottom: 200px;
 }
 
 .darkHeroOverlay {
