@@ -9,13 +9,14 @@ import ProjectsCarrosselNew from "../components/ProjectsCarrosselNew";
 import Effect from "../assets/images/effect.svg";
 import BottomEffect from "../components/BottomEfect";
 
-
 // delete if not recyclable
 // import CarTypesServices from "../components/CarTypeServices";
 
 import "../styles/style.css";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const Navigate = useNavigate()
   return (
     <div className="blackWrapper">
       {/* hero */}
@@ -171,7 +172,7 @@ const Home = () => {
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.5}} // Ensures it only animates once when 20% of it is in view
         >
-          <button>
+          <button onClick={() => Navigate("/contact-us")}>
             Contact
           </button>
         </motion.div>

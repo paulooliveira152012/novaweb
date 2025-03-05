@@ -122,12 +122,11 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px; 
   }
   
   .backButton:hover {
-    background: #555;
+    background: #555 !important;
   }
   
   .blogTip {
