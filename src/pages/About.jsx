@@ -44,7 +44,7 @@ const About = () => {
                   <article className="aboutIntro paddingContainer">
                     <h3 className="pageTitle"> About us</h3>
                     <p>
-                      Our goal is to provide creative and functional solutions
+                      At <span style={{color: "yellow", fontWeight: "bold"}}>Nova Digital Solutions</span>, our goal is to provide creative and functional solutions
                       that help businesses stand out in the digital world. We
                       focus on each client’s unique needs to deliver a
                       high-quality and innovative digital presence. Driven by
