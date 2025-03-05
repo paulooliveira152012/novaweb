@@ -3,10 +3,10 @@ import "../styles/components/hero.css";
 import { useNavigate } from "react-router-dom";
 import heroImg from "../assets/images/heronovaimage.jpg";
 import Header from "./Header";
-import Elipse from "../assets/images/Ellipse.svg"
+import Elipse from "../assets/images/Ellipse.svg";
 // import video from "../assets/videos/heroVideo.MP4";
 import Starfield from "../components/Starfield";
-import Moon from "../assets/images/moon.png"
+import Moon from "../assets/images/moon.png";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -33,17 +33,25 @@ const Hero = () => {
       {/* <div className="stars"></div>  */}
       <Starfield />
       <img className="heroImg" />
-      <div className="darkHeroOverlay" aria-hidden="true"></div>
+      {/* <div className="darkHeroOverlay" aria-hidden="true"></div> */}
       <div className="heroContent">
         <h1>
           Your vision, <br />
           our innovation
         </h1>
-        <button onClick={() => navigate("/contact-us")}>Contact us</button>
+        <button
+          onClick={() => {
+            console.log("Button Clicked!");
+            navigate("/contact-us");
+          }}
+          style={{ cursor: "pointer" }}
+        >
+          Contact us
+        </button>
+
         <img src={Elipse} className="ellipse" />
 
         {/* <img src={Moon} className="ellipse moon" /> */}
-
       </div>
     </div>
   );
