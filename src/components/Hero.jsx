@@ -46,7 +46,7 @@ const Hero = () => {
               {expertise[currentExpertise].title}
             </motion.h1>
           </AnimatePresence>
-          <p>At <span style={{color: "yellow", fontWeight: "bold"}}>Nova Digital Solutions </span>We transform your ideas into innovative digital solutions to elevate your business online.</p>
+          <p>At <span style={{color: "yellow", fontWeight: "bold"}}>Nova Digital Solutions, </span>we transform your ideas into innovative digital solutions to elevate your business online.</p>
         </div>
 
         <button
