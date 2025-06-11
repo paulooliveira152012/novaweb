@@ -26,7 +26,7 @@
   {
     "id": "hikari",
     "projectTitle": "Hikari",
-    "projectLink": "https://hikarishopx-e0ede5b8b8e6.herokuapp.com/",
+    "projectLink": "https://hikari-frontend-five.vercel.app/",
     "projectDescription": "I developed a full-stack web application using React for a dynamic and responsive user interface, Node.js and Express.js for a robust backend, and MongoDB for scalable data storage. The app integrates Python scripts for data preprocessing, AWS for secure cloud storage with S3 buckets, and is deployed on Heroku with CI/CD pipelines using GitHub Actions to ensure continuous delivery and high performance.",
     "imageClass": "hikari",
     "imageSrc": "hikari.jpg"
