@@ -34,7 +34,7 @@
   {
     "id": "cristaos",
     "projectTitle": "Cristãos",
-    "projectLink": "https://cristaosweb-e5a94083e783.herokuapp.com/",
+    "projectLink": "https://cristaos-frontend.vercel.app/",
     "projectDescription": "I developed Cristaos, a full-stack web application, using React for an interactive user interface and Node.js/Express.js for the backend. The app supports real-time communication with Socket.IO, enabling live chat rooms and content sharing. It integrates MongoDB for flexible data storage and AWS S3 for secure image uploads. Deployed on Heroku, the app allows users to create blogs, share images, polls, and links, offering a seamless, dynamic experience across different content types.",
     "imageClass": "cristaos",
     "imageSrc": "cristaos.jpg"
